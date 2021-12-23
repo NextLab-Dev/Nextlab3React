@@ -1,9 +1,10 @@
 const NavbarRow = () => {
-//   const office = require("./img/darkOffice.jpg");
-  const juneoVideo = require("./img/landingVideo.mp4");
+  const office = require("./img/darkOffice.jpg");
+//   const juneoVideo = require("./img/landingVideo.mp4");
   return (
     <div className="imageContainer">
-      <video src={juneoVideo} autoPlay loop playsInline muted></video>
+      {/* <video src={juneoVideo} autoPlay loop playsInline muted></video> */}
+      <img src={office} alt="Office" />
       <div className="insideObjectFirst">
         <nav className="navbar navbar-expand-sm navbar-dark">
           <h1 className="companyName">
@@ -13,14 +14,14 @@ const NavbarRow = () => {
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
+            data-target="#navHeaderCollapse"
+            aria-controls="navHeaderCollapse"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div className="collapse navbar-collapse" id="navHeaderCollapse">
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
