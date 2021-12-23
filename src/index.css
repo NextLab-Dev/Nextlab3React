@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +8,76 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.mainPage {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.imageContainer {
+  position: relative;
+  max-height: 350px;
+  color: white;
+  overflow: hidden;
+}
+.insideObjectFirst {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.insideObjectSecond {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  font-size: 27px;
+  font-weight: bold;
+}
+.insideObjectSecond p {
+  margin-bottom: 0;
+}
+.titleStyle {
+  border-right: 1px solid white;
+  padding-right: 20px;
+}
+.linkStyle {
+  font-size: 18px;
+}
+#navbarSupportedContent {
+  padding-left: 15px;
+}
+.codeRowContainer {
+  margin-top: 50px;
+}
+.paragraphStyle{
+  margin-top: 20%;
+  font-size: 23px;
+}
+.paragraphStyle p {
+  margin-bottom: 0;
+}
+.mockupStyle{
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .insideObjectSecond {
+    top: 80px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .titleStyle {
+    border-right: none;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .insideObjectSecond {
+    top: 100px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .insideObjectSecond {
+    font-size: 22px;
+  }
 }

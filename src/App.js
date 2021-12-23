@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import NavbarRow from "./NavbarRow";
+import CodeRow from "./CodeRow";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App mainPage container-fluid g-0">
+      <div className="row justify-content-center">
+        <div className="col-12">
+          <NavbarRow /> 
+          <CodeRow />
+        </div>
+      </div>
     </div>
   );
 }
