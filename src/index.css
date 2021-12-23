@@ -21,6 +21,11 @@ code {
   color: white;
   overflow: hidden;
 }
+.imageContainer video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .insideObjectFirst {
   position: absolute;
   top: 15px;
@@ -29,37 +34,61 @@ code {
 .insideObjectSecond {
   position: absolute;
   top: 150px;
-  left: 100px;
+  left: 150px;
   font-size: 27px;
   font-weight: bold;
 }
 .insideObjectSecond p {
   margin-bottom: 0;
 }
-.titleStyle {
+.companyName {
   border-right: 1px solid white;
-  padding-right: 20px;
+  padding-right: 15px;
 }
-.linkStyle {
+#navbarNavDropdown {
+  padding-left: 10px;
+}
+#navbarNavDropdown ul li a {
   font-size: 18px;
 }
-#navbarSupportedContent {
-  padding-left: 15px;
-}
 .codeRowContainer {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .paragraphStyle{
-  margin-top: 20%;
   font-size: 23px;
+  margin-bottom: 30px;
+}
+.paragraphBold {
+  font-weight: bold;
 }
 .paragraphStyle p {
   margin-bottom: 0;
 }
 .mockupStyle{
   width: 100%;
+  border-radius: 10px 10px 10px 10px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 575px) {
+  .companyName {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .insideObjectSecond {
+    left: 0;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .paragraphStyle{
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .paragraphStyle{
+    margin-top: 10%;
+  }
+}
+/* @media only screen and (max-width: 500px) {
   .insideObjectSecond {
     top: 80px;
     font-size: 16px;
@@ -80,4 +109,4 @@ code {
   .insideObjectSecond {
     font-size: 22px;
   }
-}
+} */
