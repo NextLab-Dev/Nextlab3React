@@ -51,7 +51,7 @@ code {
 #navbarNavDropdown ul li a {
   font-size: 18px;
 }
-.codeRowContainer {
+.codeRowContainer, .statisticsRowContainer {
   margin-top: 30px;
 }
 .paragraphStyle{
@@ -67,6 +67,38 @@ code {
 .mockupStyle{
   width: 100%;
   border-radius: 10px 10px 10px 10px;
+}
+.statisticsRowContainer {
+  background-color: #455A64;
+  padding: 30px 0 30px 0;
+}
+.statisticsTitle {
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.card {
+  background-color: #455A64!important;
+  
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+.descriptionContainer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.descriptionNumber {
+  font-size: 35px;
+  font-weight: bold;
+}
+.imgContainer {
+  width: 60px;
+  height: 60px;
+  margin: auto;
 }
 @media only screen and (max-width: 575px) {
   .companyName {

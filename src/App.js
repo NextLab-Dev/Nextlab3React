@@ -1,5 +1,6 @@
 import NavbarRow from "./NavbarRow";
 import CodeRow from "./CodeRow";
+import StatisticsRow from "./StatisticsRow";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <div className="col-12">
           <NavbarRow /> 
           <CodeRow />
+          <StatisticsRow />
         </div>
       </div>
     </div>
