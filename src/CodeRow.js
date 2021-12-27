@@ -6,7 +6,7 @@ const CodeRow = () => {
         <div className="row justify-content-center">
           <div className="col-9 col-sm-7 col-md-5 col-lg-4">
             <div className="paragraphStyle">
-              <p className="paragraphBold">Generate your:</p>
+              <h2>Generate your:</h2>
               <p>Vouchers <i className="bi bi-arrow-right"></i> Tokens <i className="bi bi-arrow-right"></i> Rewards</p>
               <p>and distribute them in your</p>
               <p>customers wallet</p>

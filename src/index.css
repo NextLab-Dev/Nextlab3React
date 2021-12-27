@@ -57,19 +57,20 @@ code {
 .paragraphStyle{
   font-size: 23px;
   margin-bottom: 30px;
-}
-.paragraphBold {
-  font-weight: bold;
+  color: #616161;
 }
 .paragraphStyle p {
   margin-bottom: 0;
 }
+.paragraphStyle h2 {
+  font-weight: bold;
+}
 .mockupStyle{
   width: 100%;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 .statisticsRowContainer {
-  background-color: #455A64;
+  background-color: #002966;
   padding: 30px 0 30px 0;
 }
 .statisticsTitle {
@@ -77,9 +78,15 @@ code {
   text-align: center;
   padding-bottom: 15px;
 }
+.statisticsTitle h2 {
+  height: 100%; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .card {
-  background-color: #455A64!important;
-  
+  background-color: #002966!important;
+  margin-right: 10px;
 }
 .wrapper {
   display: flex;
@@ -87,7 +94,6 @@ code {
   margin: 0;
 }
 .descriptionContainer {
-  width: 50%;
   margin: auto;
   text-align: center;
 }
@@ -100,6 +106,52 @@ code {
   height: 60px;
   margin: auto;
 }
+.mainProjectStyle {
+  color: #616161;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.mainProjectStyle h2 {
+  font-weight: bold;
+}
+.mainProjectImgContainer {
+  margin-bottom: 30px;
+}
+.mainProjectImgContainer video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.footerRowContainer {
+  padding: 15px 0;
+  color: white;
+  background-color: #343434;
+}
+.footerStyle {
+  text-align: center;
+  font-size: 13px;;
+}
+.footerStyle img {
+  width: 17px;
+  height: 15px;
+}
+.bottomFooterRowContainer {
+  background-color: #002152;
+  padding: 30px 0;
+  color: white;
+}
+.bottomFooterStyle h4 {
+  border-bottom: 1px solid white;
+}
+.bottomFooterStyle a {
+  text-decoration: none;
+  color: white;
+}
+.bottomFooterStyle a:hover {
+  text-decoration: underline;
+  color: white;
+}
 @media only screen and (max-width: 575px) {
   .companyName {
     border-right: none;
@@ -108,6 +160,7 @@ code {
 @media only screen and (max-width: 600px) {
   .insideObjectSecond {
     left: 10px;
+    top: 200px;
     font-size: 20px;
     padding-left: 20px;
   }

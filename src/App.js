@@ -1,6 +1,9 @@
 import NavbarRow from "./NavbarRow";
 import CodeRow from "./CodeRow";
 import StatisticsRow from "./StatisticsRow";
+import MainProjectRow from "./MainProjectRow";
+import FooterRow from "./FooterRow";
+import BottomFooterRow from "./BottomFooterRow";
 
 function App() {
   return (
@@ -10,6 +13,9 @@ function App() {
           <NavbarRow /> 
           <CodeRow />
           <StatisticsRow />
+          <MainProjectRow />
+          <BottomFooterRow />
+          <FooterRow />
         </div>
       </div>
     </div>
