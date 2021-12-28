@@ -1,9 +1,4 @@
-import Navigation from "./Navigation";
-import BottomFooterRow from "./BottomFooterRow";
-import FooteRow from "./FooterRow"
-
 const Teams = () => {
-  const darkOffice = require("./img/darkOffice.jpg");
   const teamsOne = [
     {
       name: "Luciano",

@@ -3,7 +3,7 @@ import Home from './Home';
 import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import Teams from "./Teams";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
