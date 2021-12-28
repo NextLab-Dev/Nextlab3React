@@ -1,5 +1,3 @@
-import React from 'react'
-
 const BottomFooterRow = () => {
     return (
         <div className="container-fluid g-0 bottomFooterRowContainer">
@@ -12,8 +10,8 @@ const BottomFooterRow = () => {
                 </div>
                 <div className="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3 bottomFooterStyle">
                     <h4>Nextlab 3</h4>
-                    <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Home</a></p>
-                    <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Teams</a></p>
+                    <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="/">Home</a></p>
+                    <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="/teams">Teams</a></p>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Contact</a></p>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Terms & Conditions</a></p>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Policy Privacy</a></p>

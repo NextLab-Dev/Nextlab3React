@@ -1,4 +1,3 @@
-import React from 'react'
 const serbiaFlag = require ("./img/heartSerbia.png");
 
 const FooterRow = () => {

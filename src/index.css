@@ -88,6 +88,10 @@ code {
   background-color: #002966!important;
   margin-right: 10px;
 }
+.cardNew {
+  background-color: whitesmoke!important;
+  margin-right: 10px;
+}
 .wrapper {
   display: flex;
   width: 100%;
@@ -151,6 +155,17 @@ code {
 .bottomFooterStyle a:hover {
   text-decoration: underline;
   color: white;
+}
+.teamImg {
+  text-align: center;
+}
+.teamImg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.teamDecription {
+  text-align: center;
 }
 @media only screen and (max-width: 575px) {
   .companyName {

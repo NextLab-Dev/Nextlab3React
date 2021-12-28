@@ -1,24 +1,27 @@
 import NavbarRow from "./NavbarRow";
-import CodeRow from "./CodeRow";
-import StatisticsRow from "./StatisticsRow";
-import MainProjectRow from "./MainProjectRow";
+import Home from './Home';
 import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
+import Teams from "./Teams";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App mainPage container-fluid g-0">
-      <div className="row justify-content-center">
-        <div className="col-12">
-          <NavbarRow /> 
-          <CodeRow />
-          <StatisticsRow />
-          <MainProjectRow />
-          <BottomFooterRow />
-          <FooterRow />
+    <Router>
+      <div className="App mainPage container-fluid g-0">
+        <div className="row justify-content-center">
+          <div className="col-12">
+            <NavbarRow />
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/teams' component={Teams} />
+          </Switch>
+            <BottomFooterRow />
+            <FooterRow />
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
