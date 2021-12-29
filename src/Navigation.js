@@ -1,4 +1,7 @@
+import { NavLink } from "react-router-dom";
+
 const Navigation = () => {
+
   return (
     <nav className="navbar navbar-expand-sm navbar-dark">
       <h1 className="companyName">Nextlab 3</h1>
@@ -15,21 +18,21 @@ const Navigation = () => {
       </button>
       <div className="collapse navbar-collapse" id="navHeaderCollapse">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="/">
+          <li className="nav-item">
+            <NavLink exact className="nav-link" to="/" activeClassName="active">
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/teams">
+            <NavLink exact className="nav-link" to="/teams" activeClassName="active">
               Teams
-            </a>
+            </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="#">
               Contact
             </a>
-          </li>
+          </li> */}
           {/*<li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown link

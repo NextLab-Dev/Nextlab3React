@@ -14,8 +14,8 @@ const App = () => {
             <NavbarRow />
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route path='/teams' component={Teams} />
-          </Switch>
+              <Route exact path='/teams' component={Teams} />
+            </Switch>
             <BottomFooterRow />
             <FooterRow />
           </div>
