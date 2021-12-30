@@ -12,7 +12,7 @@ const BottomFooterRow = () => {
                     <h4>Nextlab 3</h4>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="/">Home</a></p>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="/teams">Teams</a></p>
-                    <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Contact</a></p>
+                    <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="/contact">Contact</a></p>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Terms & Conditions</a></p>
                     <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="">Policy Privacy</a></p>
                 </div>
