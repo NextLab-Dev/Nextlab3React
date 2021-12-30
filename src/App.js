@@ -3,6 +3,7 @@ import Home from './Home';
 import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import Teams from "./Teams";
+import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/teams' component={Teams} />
+              <Route exact path='/contact' component={Contact} />
             </Switch>
             <BottomFooterRow />
             <FooterRow />

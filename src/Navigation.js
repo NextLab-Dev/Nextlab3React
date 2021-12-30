@@ -28,11 +28,11 @@ const Navigation = () => {
               Teams
             </NavLink>
           </li>
-          {/* <li className="nav-item">
-            <a className="nav-link" href="#">
+          <li className="nav-item">
+            <NavLink exact className="nav-link" to="/contact" activeClassName="active">
               Contact
-            </a>
-          </li> */}
+            </NavLink>
+          </li>
           {/*<li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown link

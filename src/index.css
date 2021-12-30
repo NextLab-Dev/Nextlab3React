@@ -166,6 +166,22 @@ body {
 .teamDecription {
   text-align: center;
 }
+.formContainer {
+  margin: 30px 0 30px 0;
+}
+.formGroupStyle label {
+  margin-bottom: 0;
+}
+.sendMsg {
+  background-color: #002966;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.alertStyle {
+  margin-top: 15px;
+}
 @media only screen and (max-width: 575px) {
   .companyName {
     border-right: none;
