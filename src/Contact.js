@@ -2,8 +2,8 @@ import { useState } from "react";
 import NavbarContact from "./NavbarContact";
 import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
-import axios from 'axios';
 import MetaTags from "react-meta-tags";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -13,36 +13,30 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [msg, setMsg] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
     if (name === "" || email === "" || text === "") {
       setError(true);
       setMsg("Please fill in all the required fields");
     } else {
-      sendMessage();
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "service_1btmmv5",
+        "template_pnipj4i",
+        e.target,
+        "user_Szim6heWfmobPNX7EDJYt"
+      ).then(res => {
+        setSuccess(true);
+        setName("");
+        setEmail("");
+        setText("");
+        setMsg(name + " successfully sent a message");
+      }).catch(err => {
+        setError(true);
+        setMsg("Please fill in all the required fields");
+      });
     }
   };
-
-  const sendMessage = () => {
-    axios
-      .post(
-        'https://nodeemailapi.herokuapp.com/email',
-      )
-      .then((res) => {
-        setSuccess(true);
-        setMsg("Your message is successfully sent");
-        setName("");
-        setEmail("");
-        setText("");
-      })
-      .catch((error) => {
-        setError(true);
-        setMsg("An error occurred. Please try again later");
-        setName("");
-        setEmail("");
-        setText("");
-      });
-  }
 
   const toggleErrorAlert = (event) => {
     event.preventDefault();
@@ -69,6 +63,7 @@ const Contact = () => {
                 <input
                   type="text"
                   value={name}
+                  name="name"
                   onChange={(e) => setName(e.target.value)}
                   className="form-control"
                   id="exampleInputName1"
@@ -79,6 +74,7 @@ const Contact = () => {
                 <input
                   type="email"
                   value={email}
+                  name="email"
                   onChange={(e) => setEmail(e.target.value)}
                   className="form-control"
                   id="exampleInputEmail1"
@@ -89,6 +85,7 @@ const Contact = () => {
                 <label htmlFor="exampleFormControlTextarea1">Message</label>
                 <textarea
                   value={text}
+                  name="text"
                   onChange={(e) => setText(e.target.value)}
                   className="form-control"
                   id="exampleFormControlTextarea1"
