@@ -16,15 +16,20 @@ body {
 }
 .imageContainer {
   position: relative;
-  max-height: 350px;
+  height: 380px;
   color: white;
   overflow: hidden;
 }
-/* .imageContainer video {
+.imageContainer video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
+.navImageStyle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .insideObjectFirst {
   position: absolute;
   top: 15px;
@@ -43,6 +48,7 @@ body {
 .companyName {
   border-right: 1px solid white;
   padding-right: 15px;
+  color: white;
 }
 #navbarNavDropdown {
   padding-left: 10px;
@@ -52,17 +58,6 @@ body {
 }
 .codeRowContainer, .statisticsRowContainer {
   margin-top: 30px;
-}
-.paragraphStyle{
-  font-size: 23px;
-  margin-bottom: 30px;
-  color: #616161;
-}
-.paragraphStyle p {
-  margin-bottom: 0;
-}
-.paragraphStyle h2 {
-  font-weight: bold;
 }
 .mockupStyle{
   width: 100%;
@@ -155,10 +150,10 @@ body {
   text-decoration: underline;
   color: white;
 }
-.teamImg {
+.front {
   text-align: center;
 }
-.teamImg img {
+.front img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -182,6 +177,60 @@ body {
 .alertStyle {
   margin-top: 15px;
 }
+.specialNavContainer {
+  background-color: #002966;
+}
+.specialNavContainer ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+.specialNavContainer li {
+  float: left;
+}
+.specialNavContainer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.specName {
+  font-weight: bold;
+}
+.notFoundStyle {
+  text-align: center;
+  padding: 100px 5px;
+}
+.cookieStyle{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cookieStyle:hover{
+  color: #039BE5;
+  text-decoration: none;
+}
+div #rcc-confirm-button {
+  bottom: 0;
+}
+.extraCard {
+  background-color: #002152;
+  color: white;
+  border-radius:  5px;
+}
+.positionContainer {
+  display: inline-table;
+}
+.positionStyle {
+  display: table-cell;
+  height:50px;
+  vertical-align: middle;
+}
+.codeExplanation {
+  font-size: 25px;
+  color: #616161;
+}
 @media only screen and (max-width: 575px) {
   .companyName {
     border-right: none;
@@ -194,34 +243,12 @@ body {
     font-size: 20px;
     padding-left: 20px;
   }
-  .paragraphStyle{
+  .codeExplanation {
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .paragraphStyle{
-    margin-top: 10%;
+@media only screen and (min-width: 600px) and (max-width: 1470px) {
+  .codeExplanation {
+      font-size: 22px;
   }
 }
-/* @media only screen and (max-width: 500px) {
-  .insideObjectSecond {
-    top: 80px;
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .titleStyle {
-    border-right: none;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 600px) {
-  .insideObjectSecond {
-    top: 100px;
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 960px) {
-  .insideObjectSecond {
-    font-size: 22px;
-  }
-} */
