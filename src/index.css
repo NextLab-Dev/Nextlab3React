@@ -37,24 +37,38 @@ body {
 }
 .insideObjectSecond {
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 170px;
+  left: 100px;
   font-size: 27px;
   font-weight: bold;
+  padding-top: 20px;
 }
 .insideObjectSecond p {
   margin-bottom: 0;
 }
-.companyName {
+.logoStyle {
+  width: 180px;
+  height: 40px;
   border-right: 1px solid white;
-  padding-right: 15px;
-  color: white;
+  padding-right: 10px;
 }
 #navbarNavDropdown {
   padding-left: 10px;
 }
 #navbarNavDropdown ul li a {
   font-size: 18px;
+}
+.dropdown {
+  margin-top: 5px;
+  width: 120px;
+}
+#dropdownMenu2 {
+  color: white;
+}
+.flagStyle {
+  width: 25px;
+  height: 15px;
+  margin-right: 5px;
 }
 .codeRowContainer, .statisticsRowContainer {
   margin-top: 30px;
@@ -85,6 +99,7 @@ body {
 .cardNew {
   background-color: whitesmoke!important;
   margin-right: 10px;
+  border-radius: 20px 0 20px 0;
 }
 .wrapper {
   display: flex;
@@ -179,10 +194,12 @@ body {
 }
 .specialNavContainer {
   background-color: #002966;
+  display: flex;
 }
 .specialNavContainer ul {
   list-style-type: none;
   margin: 0;
+  padding-left: 0;
   overflow: hidden;
 }
 .specialNavContainer li {
@@ -215,9 +232,11 @@ div #rcc-confirm-button {
   bottom: 0;
 }
 .extraCard {
-  background-color: #002152;
+  background: #136a8a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  border-radius:  5px;
+  border-radius:  20px 0 20px 0;
 }
 .positionContainer {
   display: inline-table;
@@ -231,20 +250,24 @@ div #rcc-confirm-button {
   font-size: 25px;
   color: #616161;
 }
-@media only screen and (max-width: 575px) {
-  .companyName {
-    border-right: none;
-  }
+.navbar-nav ul li a {
+  padding-bottom: 0px;
 }
+
 @media only screen and (max-width: 600px) {
   .insideObjectSecond {
-    left: 10px;
+    left: 30px;
     top: 200px;
     font-size: 20px;
     padding-left: 20px;
   }
   .codeExplanation {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logoStyle {
+    border-right: none;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1470px) {

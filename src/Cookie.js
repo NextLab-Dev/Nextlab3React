@@ -1,5 +1,5 @@
 import CookieConsent from "react-cookie-consent";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Cookie = () => {
   const [cookieExist, setCookieExist] = useState(false);

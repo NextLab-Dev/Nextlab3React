@@ -14,6 +14,7 @@ const Contact = () => {
   const [msg, setMsg] = useState("");
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (name === "" || email === "" || text === "") {
       setError(true);
       setMsg("Please fill in all the required fields");
@@ -27,13 +28,15 @@ const Contact = () => {
         "user_Szim6heWfmobPNX7EDJYt"
       ).then(res => {
         setSuccess(true);
+        setError(false);
         setName("");
         setEmail("");
         setText("");
         setMsg(name + " successfully sent a message");
       }).catch(err => {
         setError(true);
-        setMsg("Please fill in all the required fields");
+        setSuccess(false);
+        setMsg("An error has occurred. Please try again");
       });
     }
   };

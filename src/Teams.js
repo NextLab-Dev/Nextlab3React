@@ -95,7 +95,7 @@ const Teams = () => {
                   </div>
                   {/* <p>{team1.description}</p> */}
                   <p className="text-center">
-                    <button className="btn btn-primary" type="button" data-toggle="collapse" data-target={"#collapseExample" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
+                    <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExample" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
                       More <i className="bi bi-plus-circle-dotted"></i>
                     </button>
                   </p>
@@ -134,7 +134,7 @@ const Teams = () => {
                   </div>
                   {/* <p>{team1.description}</p> */}
                   <p className="text-center">
-                    <button className="btn btn-primary" type="button" data-toggle="collapse" data-target={"#collapseExampleNew" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
+                    <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExampleNew" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
                       More <i className="bi bi-plus-circle-dotted"></i>
                     </button>
                   </p>
