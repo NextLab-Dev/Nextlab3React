@@ -1,5 +1,7 @@
+// import { useSelector } from 'react-redux';
+
 const SpecialNav = () => {
-  
+  // const language = useSelector((state) => state.language);
   return (
     <div className="specialNavContainer">
       <ul>

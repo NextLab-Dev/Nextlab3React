@@ -1,23 +1,17 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useSelector, useDispatch} from 'react-redux';
 
 const Navigation = () => {
   const companyLogo = require("./img/Signature-02.png");
   const serbiaFlag = require("./img/serbia.png");
   const englishFlag = require("./img/england.png");
-  // const [home, setHome] = useState('Home');
-  const [language, setLanguage] = useState(true);
 
-  const handleEnLanguage = () => {
-    setLanguage(true);
-    // setEnLanguage(true);
-    // setHome("Home");
-  }
-  const handleSrLanguage = () => {
-    setLanguage(false);
-    // setEnLanguage(false);
-    // setHome("O nama");
-  }
+  const language = useSelector((state) => state.language);
+  const home = useSelector((state) => state.navHome);
+  const teams = useSelector((state) => state.navTeams);
+  const contact = useSelector((state) => state.navContact);
+  const chooseLang = useSelector((state) => state.navLang);
+  const dispatch = useDispatch();
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark mx-5">
@@ -41,17 +35,17 @@ const Navigation = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <NavLink exact className="nav-link navLinksStyle" to="/" activeClassName="active">
-                Home
+                {home}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink exact className="nav-link navLinksStyle" to="/teams" activeClassName="active">
-                Teams
+              {teams}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink exact className="nav-link navLinksStyle" to="/contact" activeClassName="active">
-                Contact
+                {contact}
               </NavLink>
             </li>
           </ul>
@@ -63,11 +57,11 @@ const Navigation = () => {
               ? <img src={englishFlag} className="flagStyle" alt="United Kingdom Flag" />
               : <img src={serbiaFlag} className="flagStyle" alt="Serbian Flag" />
           }
-            Language
+            {chooseLang}
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button className="dropdown-item" type="button" onClick={handleEnLanguage}>English</button></li>
-            <li><button className="dropdown-item" type="button" onClick={handleSrLanguage}>Srpski</button></li>
+            <li><button className="dropdown-item" type="button" onClick={(() => dispatch({type:'TOGGLE_EN_LANGUAGE'}))}>English</button></li>
+            <li><button className="dropdown-item" type="button" onClick={(() => dispatch({type:'TOGGLE_SR_LANGUAGE'}))}>Srpski</button></li>
           </ul>
         </div>
       </div>
@@ -75,4 +69,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default (Navigation);
