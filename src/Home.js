@@ -4,8 +4,11 @@ import BottomFooterRow from "./BottomFooterRow";
 import Cookie from "./Cookie";
 import MetaTags from "react-meta-tags";
 import { useSelector } from 'react-redux';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
+  AOS.init();
   const codeImg = require("./img/generator mockup.jpg");
   const projectVideo = require("./img/landingVideo.mp4");
   const language = useSelector((state) => state.language);
@@ -39,12 +42,12 @@ const Home = () => {
     <div>
       <NavbarHome />
       <MetaTags>
-      {(language === true)
-        ?
-        <title>Nextlab 3 - Ideas focused on blockchain, cryptocurrency and wallets development</title>
-        :
-        <title>Nextlab 3 - Ideje Fokusirane na Blockchain, Kriptovalute i Digitalne Novčanike</title>
-      }
+        {(language === true)
+          ?
+          <title>Nextlab 3 - Ideas focused on blockchain, cryptocurrency and wallets development</title>
+          :
+          <title>Nextlab 3 - Ideje Fokusirane na Blockchain, Kriptovalute i Digitalne Novčanike</title>
+        }
       </MetaTags>
       <div className="container-fluid g-0 codeRowContainer">
         {(language === true)
@@ -96,6 +99,9 @@ const Home = () => {
             <div
               key={index}
               className="col-8 col-sm-4 col-md-3 col-xl-3 card text-white shadow-lg py-3 my-2"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
             >
               <div className="wrapper">
                 <img
