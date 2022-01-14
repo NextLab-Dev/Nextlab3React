@@ -14,7 +14,7 @@ const Navigation = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark mx-5">
+    <nav className="navbar navbar-expand-lg navbar-dark">
       <img src={companyLogo} className="logoStyle" alt="Nextlab 3 logo" />
       <button
         className="navbar-toggler"

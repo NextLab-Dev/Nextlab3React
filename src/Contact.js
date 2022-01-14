@@ -4,6 +4,7 @@ import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import MetaTags from "react-meta-tags";
 import emailjs from "emailjs-com";
+import { useSelector } from 'react-redux';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,12 +13,17 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [msg, setMsg] = useState("");
+  const language = useSelector((state) => state.language);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name === "" || email === "" || text === "") {
       setError(true);
-      setMsg("Please fill in all the required fields");
+      if(language === true) {
+        setMsg("Please fill in all the required fields");
+      } else {
+        setMsg("Molimo Vas popunite sva polja");
+      }
     } else {
       e.preventDefault();
 
@@ -32,11 +38,19 @@ const Contact = () => {
         setName("");
         setEmail("");
         setText("");
-        setMsg(name + " successfully sent a message");
+        if(language === true) {
+          setMsg(name + " successfully sent a message");
+        } else {
+          setMsg(name + " je uspešno poslao/la poruku");
+        }
       }).catch(err => {
         setError(true);
         setSuccess(false);
-        setMsg("An error has occurred. Please try again");
+        if(language === true) {
+          setMsg("An error has occurred. Please try again");
+        } else {
+          setMsg("Došlo je do greške. Molimo Vas pokušajte kasnije");
+        }
       });
     }
   };
@@ -55,14 +69,24 @@ const Contact = () => {
     <div>
       <NavbarContact />
       <MetaTags>
-        <title>Nextlab 3 - Contact us</title>
+        {(language === true)
+          ?
+          <title>Nextlab 3 - Contact us</title>
+          :
+          <title>Nextlab 3 - Kontaktirajte nas</title>
+        }
       </MetaTags>
       <div className="container-fluid g-0 formContainer">
         <div className="row justify-content-center">
           <div className="col-9 col-sm-7">
             <form onSubmit={handleSubmit}>
               <div className="form-group formGroupStyle">
-                <label htmlFor="exampleInputName1">Name</label>
+                {(language === true)
+                  ?
+                  <label htmlFor="exampleInputName1">Name</label>
+                  :
+                  <label htmlFor="exampleInputName1">Ime</label>
+                }
                 <input
                   type="text"
                   value={name}
@@ -73,7 +97,12 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group formGroupStyle">
-                <label htmlFor="exampleInputEmail1">Email address</label>
+                {(language === true)
+                  ?
+                  <label htmlFor="exampleInputEmail1">Email address</label>
+                  :
+                  <label htmlFor="exampleInputEmail1">Email adresa</label>
+                }
                 <input
                   type="email"
                   value={email}
@@ -85,7 +114,12 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group formGroupStyle">
-                <label htmlFor="exampleFormControlTextarea1">Message</label>
+                {(language === true)
+                  ?
+                  <label htmlFor="exampleFormControlTextarea1">Message</label>
+                  :
+                  <label htmlFor="exampleFormControlTextarea1">Poruka</label>
+                }
                 <textarea
                   value={text}
                   name="text"
@@ -95,43 +129,28 @@ const Contact = () => {
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">
-                Send message <i className="bi bi-chevron-double-right"></i>
-              </button>
+              {(language === true)
+                ?
+                <button type="submit" className="btn btn-primary mt-3">
+                  Send message <i className="bi bi-chevron-double-right"></i>
+                </button>
+                :
+                <button type="submit" className="btn btn-primary mt-3">
+                  Pošalji poruku <i className="bi bi-chevron-double-right"></i>
+                </button>
+              }
             </form>
             {error && (
-              <div
-                className="alert alert-danger alert-dismissible alertStyle"
-                role="alert"
-              >
-                {msg}
-                <button
-                  type="button"
-                  className="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                  onClick={toggleErrorAlert}
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <div className="alert alert-danger alert-dismissible fade show alertStyle" role="alert">
+                <strong>{msg}</strong>
+                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={toggleErrorAlert}></button>
               </div>
             )}
 
             {success && (
-              <div
-                className="alert alert-success alert-dismissible alertStyle"
-                role="alert"
-              >
-                {msg}
-                <button
-                  type="button"
-                  className="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                  onClick={toggleSuccessAlert}
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <div className="alert alert-success alert-dismissible fade show alertStyle" role="alert">
+                <strong>{msg}</strong>
+                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={toggleSuccessAlert}></button>
               </div>
             )}
           </div>

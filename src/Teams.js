@@ -2,35 +2,45 @@ import NavbarTeams from "./NavbarTeams";
 import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import MetaTags from "react-meta-tags";
+import { useSelector } from 'react-redux';
 
 const Teams = () => {
+  const language = useSelector((state) => state.language);
   const teamsOne = [
     {
       name: "Luciano",
       surname: "Mendonça Païs",
-      position: "Founder / Dev Team",
-      description: "Financial Apps, Markets And Data Analytics",
+      positionEn: "Founder / Dev Team",
+      descriptionEn: "Financial Apps, Markets And Data Analytics",
+      positionSr: "Osnivač / Dev Tim",
+      descriptionSr: "Analiza finansijskih aplikacija, tržišta i podataka",
       img: require("./img/Luciano-Mendonca.png"),
     },
     {
       name: "Yves",
       surname: "Bassens",
-      position: "Co-Founder / Bussiness Dev Team",
-      description: "Operational And Institutional Account",
+      positionEn: "Co-Founder / Bussiness Dev Team",
+      descriptionEn: "Operational And Institutional Account",
+      positionSr: "Suosnivač / Biznis Dev Tim",
+      descriptionSr: "Operativni i institucionalni račun",
       img: require("./img/Yves_Bassens.png"),
     },
     {
       name: "Bernard",
       surname: "Neyes",
-      position: "Co-Founder / Bussiness Dev Team",
-      description: "Projects Development With Creativity",
+      positionEn: "Co-Founder / Bussiness Dev Team",
+      descriptionEn: "Projects Development With Creativity",
+      positionSr: "Suosnivač / Biznis Dev Tim",
+      descriptionSr: "Kreativni razvoj projekata",
       img: require("./img/Bernard_Neyns.png"),
     },
     {
       name: "Tiago",
       surname: "Carruco",
-      position: "Operations",
-      description: "Operations Support",
+      positionEn: "Operations",
+      descriptionEn: "Operations Support",
+      positionSr: "Office asistent",
+      descriptionSr: "Asistent operative",
       img: require("./img/Tiago-Carruco.png"),
     },
   ];
@@ -38,29 +48,37 @@ const Teams = () => {
     {
       name: "Nikola",
       surname: "Ilić",
-      position: "Dev Team",
-      description: "Security Analyst",
+      positionEn: "Dev Team",
+      descriptionEn: "Security Analyst",
+      positionSr: "Dev Tim",
+      descriptionSr: "Bezbednost sistema",
       img: require("./img/Nikola_Ilic.jpg"),
     },
     {
       name: "Aleksandra",
       surname: "Kitanović",
-      position: "Dev Team",
-      description: "Lead Designer",
+      positionEn: "Dev Team",
+      descriptionEn: "Lead Designer",
+      positionSr: "Dev Tim",
+      descriptionSr: "Lead Dizajner",
       img: require("./img/Aleksandra_Kitanovic.png"),
     },
     {
       name: "Jelena",
       surname: "Ilić",
-      position: "Dev Team",
-      description: "Front End Developer",
+      positionEn: "Dev Team",
+      descriptionEn: "Front End Developer",
+      positionSr: "Dev Tim",
+      descriptionSr: "Front End Developer",
       img: require("./img/Jelena_Ilic.png"),
     },
     {
       name: "Nevena",
       surname: "Janković",
-      position: "Operations",
-      description: "Operations Support",
+      positionEn: "Operations",
+      descriptionEn: "Operations Support",
+      positionSr: "Office Asistent",
+      descriptionSr: "Asistent operative",
       img: require("./img/Nevena_Jankovic.png"),
     },
   ];
@@ -69,7 +87,12 @@ const Teams = () => {
     <div>
       <NavbarTeams />
       <MetaTags>
-        <title>Nextlab 3 - Our team</title>
+        {(language === true)
+          ?
+          <title>Nextlab 3 - Our team</title>
+          :
+          <title>Nextlab 3 - Naš tim </title>
+        }
       </MetaTags>
       <div className="container-fluid g-0">
         <div className="row justify-content-center">
@@ -89,22 +112,40 @@ const Teams = () => {
                   <h4 className="mb-0">{team1.surname}</h4>
                 </div>
                 <hr />
-                <div className="text-center font-italic back">
-                  <div className="positionContainer">
-                    <h5 className="positionStyle">{team1.position}</h5>
-                  </div>
-                  {/* <p>{team1.description}</p> */}
-                  <p className="text-center">
-                    <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExample" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
-                      More <i className="bi bi-plus-circle-dotted"></i>
-                    </button>
-                  </p>
-                  <div className="collapse" id={"collapseExample" + `${index}`}>
-                    <div className="extraCard card-body">
-                      {team1.description}
+                {(language === true)
+                  ?
+                  <div className="text-center font-italic back">
+                    <div className="positionContainer">
+                      <h5 className="positionStyle">{team1.positionEn}</h5>
+                    </div>
+                    <p className="text-center">
+                      <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExample" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
+                        More <i className="bi bi-plus-circle-dotted"></i>
+                      </button>
+                    </p>
+                    <div className="collapse" id={"collapseExample" + `${index}`}>
+                      <div className="extraCard card-body">
+                        {team1.descriptionEn}
+                      </div>
                     </div>
                   </div>
-                </div>
+                  :
+                  <div className="text-center font-italic back">
+                    <div className="positionContainer">
+                      <h5 className="positionStyle">{team1.positionSr}</h5>
+                    </div>
+                    <p className="text-center">
+                      <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExample" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
+                        Opis <i className="bi bi-plus-circle-dotted"></i>
+                      </button>
+                    </p>
+                    <div className="collapse" id={"collapseExample" + `${index}`}>
+                      <div className="extraCard card-body">
+                        {team1.descriptionSr}
+                      </div>
+                    </div>
+                  </div>
+                }
               </div>
             </div>
           ))}
@@ -128,22 +169,41 @@ const Teams = () => {
                   <h4 className="mb-0">{team2.surname}</h4>
                 </div>
                 <hr />
-                <div className="text-center font-italic back">
-                  <div className="positionContainer">
-                    <h5 className="positionStyle">{team2.position}</h5>
-                  </div>
-                  {/* <p>{team1.description}</p> */}
-                  <p className="text-center">
-                    <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExampleNew" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
-                      More <i className="bi bi-plus-circle-dotted"></i>
-                    </button>
-                  </p>
-                  <div className="collapse" id={"collapseExampleNew" + `${index}`}>
-                    <div className="extraCard card-body">
-                      {team2.description}
+                {(language === true)
+                  ?
+                  <div className="text-center font-italic back">
+                    <div className="positionContainer">
+                      <h5 className="positionStyle">{team2.positionEn}</h5>
+                    </div>
+                    <p className="text-center">
+                      <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExampleNew" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
+                        More <i className="bi bi-plus-circle-dotted"></i>
+                      </button>
+                    </p>
+                    <div className="collapse" id={"collapseExampleNew" + `${index}`}>
+                      <div className="extraCard card-body">
+                        {team2.descriptionEn}
+                      </div>
                     </div>
                   </div>
-                </div>
+                  :
+                  <div className="text-center font-italic back">
+                    <div className="positionContainer">
+                      <h5 className="positionStyle">{team2.positionSr}</h5>
+                    </div>
+                    <p className="text-center">
+                      <button className="btn btn-outline-success" type="button" data-toggle="collapse" data-target={"#collapseExampleNew" + `${index}`} aria-expanded="false" aria-controls="collapseExample">
+                        More <i className="bi bi-plus-circle-dotted"></i>
+                      </button>
+                    </p>
+                    <div className="collapse" id={"collapseExampleNew" + `${index}`}>
+                      <div className="extraCard card-body">
+                        {team2.descriptionSr}
+                      </div>
+                    </div>
+                  </div>
+                }
+
               </div>
             </div>
           ))}

@@ -1,24 +1,8 @@
-import CookieConsent from "react-cookie-consent";
-import { useState } from "react";
+import CookieConsent from "react-cookie-consent"
 
 const Cookie = () => {
-  const [cookieExist, setCookieExist] = useState(false);
-
-  const handleClick = () => {
-    setCookieExist(true);
-  }
-
-  // useEffect(() => {
-  //   if (checker === true) {
-  //     console.log('cookie exist');
-  //     setCookieExist(true)
-  //   } else {
-  //     console.log('cookie does not exist')
-  //   }
-  // });
   return (
     <div>
-      {!cookieExist &&
         <CookieConsent
           style={{ backgroundColor: "#424242" }}
           buttonStyle={{
@@ -27,10 +11,17 @@ const Cookie = () => {
             color: "white",
             width: "100px"
           }}
-          onAccept={handleClick}
           buttonText="Accept"
+          declineButtonStyle={{
+            backgroundColor: "#dc3545",
+            borderRadius: "5px",
+            color: "white",
+            width: "100px"
+          }}
+          declineButtonText="Refuse"
           cookieName="language"
           cookieValue="true"
+          declineCookieValue="false"
           expires={1}
           overlay
         >
@@ -41,7 +32,6 @@ const Cookie = () => {
           information. Please accept cookies for optimal performances.
           <a href="/privacy-policy" className="cookieStyle"> Privacy Policy</a>
         </CookieConsent>
-      }
     </div>
   );
 };

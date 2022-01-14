@@ -39,7 +39,12 @@ const Home = () => {
     <div>
       <NavbarHome />
       <MetaTags>
+      {(language === true)
+        ?
         <title>Nextlab 3 - Ideas focused on blockchain, cryptocurrency and wallets development</title>
+        :
+        <title>Nextlab 3 - Ideje Fokusirane na Blockchain, Kriptovalute i Digitalne Novčanike</title>
+      }
       </MetaTags>
       <div className="container-fluid g-0 codeRowContainer">
         {(language === true)
@@ -77,10 +82,16 @@ const Home = () => {
       </div>
       <div className="container-fluid g-0 statisticsRowContainer">
         <div className="row justify-content-center">
-          <div className="col-12 col-xxl-2 statisticsTitle p-0">
-            <h2 className="mb-3 mb-xxl-0">Statistics</h2>
-          </div>
-          { }
+          {(language === true)
+            ?
+            <div className="col-12 col-xxl-2 statisticsTitle p-0">
+              <h2 className="mb-3 mb-xxl-0">Statistics</h2>
+            </div>
+            :
+            <div className="col-12 col-xxl-2 statisticsTitle p-0">
+              <h2 className="mb-3 mb-xxl-0">Statistika</h2>
+            </div>
+          }
           {cards.map((card, index) => (
             <div
               key={index}

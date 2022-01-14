@@ -52,6 +52,9 @@ body {
   border-right: 1px solid white;
   padding-right: 10px;
 }
+.navbar {
+  margin: 0 50px 0 30px;
+}
 #navbarNavDropdown {
   padding-left: 10px;
 }
@@ -179,8 +182,8 @@ body {
 .formContainer {
   margin: 30px 0 30px 0;
 }
-.formGroupStyle label {
-  margin-bottom: 0;
+.formGroupStyle input {
+  margin-bottom: 10px;
 }
 .sendMsg {
   background-color: #002966;
@@ -252,6 +255,9 @@ div #rcc-confirm-button {
 }
 .navbar-nav ul li a {
   padding-bottom: 0px;
+}
+.backBtn {
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {

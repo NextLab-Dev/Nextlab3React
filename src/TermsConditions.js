@@ -1,14 +1,12 @@
-import SpecialNav from './SpecialNav';
 import FooterRow from "./FooterRow";
-import BottomFooterRow from "./BottomFooterRow";
 
 const TermsConditions = () => {
   return (
     <div>
-      <SpecialNav />
-      <div className="container-fluid g-0">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10 p-3">
+            <a href="/"><button type="button" className="btn btn-primary backBtn"><i className="bi bi-arrow-left"></i> Home</button></a>
             <h2 className="font-weight-bold">Terms and Conditions</h2>
             <p>Welcome to Nextlab 3</p>
             <p>
@@ -289,7 +287,6 @@ const TermsConditions = () => {
           </div>
         </div>
       </div>
-      <BottomFooterRow />
       <FooterRow />
     </div>
   );
