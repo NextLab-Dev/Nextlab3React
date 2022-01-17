@@ -1,5 +1,4 @@
 import NavbarTeams from "./NavbarTeams";
-import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import MetaTags from "react-meta-tags";
 import { useSelector } from 'react-redux';
@@ -46,13 +45,13 @@ const Teams = () => {
   ];
   const teamsTwo = [
     {
-      name: "Nikola",
-      surname: "Ilić",
-      positionEn: "Dev Team",
-      descriptionEn: "Security Analyst",
-      positionSr: "Dev Tim",
-      descriptionSr: "Bezbednost sistema",
-      img: require("./img/Nikola_Ilic.jpg"),
+      name: "Branislav",
+      surname: "Savić",
+      positionEn: "Customer Support team",
+      descriptionEn: "Product owner",
+      positionSr: "Korisnička podrška",
+      descriptionSr: "Menadžer proizvoda",
+      img: require("./img/Branislav_Savic.png"),
     },
     {
       name: "Aleksandra",
@@ -210,7 +209,6 @@ const Teams = () => {
         </div>
       </div>
       <BottomFooterRow />
-      <FooterRow />
     </div>
   );
 };
