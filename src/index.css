@@ -78,6 +78,7 @@ body {
 }
 .mockupStyle{
   width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 .statisticsRowContainer {
@@ -253,8 +254,16 @@ div #rcc-confirm-button {
   vertical-align: middle;
 }
 .codeExplanation {
-  font-size: 25px;
-  color: #616161;
+  color: #424242;
+}
+.codeExplanationHeader {
+  font-size: 22px;
+}
+.codeExplanationFirst {
+  font-size: 20px;
+}
+.codeExplanationSecond {
+  font-style: italic;
 }
 .navbar-nav ul li a {
   padding-bottom: 0px;
@@ -270,17 +279,45 @@ div #rcc-confirm-button {
     font-size: 20px;
     padding-left: 20px;
   }
-  .codeExplanation {
+  .codeExplanationFirst {
+    font-size: 14px;
+  }
+  .codeExplanationSecond {
+    font-size: 12px;
+  }
+  .codeExplanationHeader {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .codeExplanationHeader {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .codeExplanationFirst {
+    font-size: 16px;
+  }
+  .codeExplanationSecond {
+    font-size: 14px;
+  }
+  .codeExplanationHeader {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .codeExplanationFirst {
+    font-size: 18px;
+  }
+  .codeExplanationSecond {
+    font-size: 16px;
+  }
+  .codeExplanationHeader {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
   .logoStyle {
     border-right: none;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 1470px) {
-  .codeExplanation {
-      font-size: 22px;
   }
 }

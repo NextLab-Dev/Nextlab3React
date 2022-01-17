@@ -12,6 +12,7 @@ const Home = () => {
   const projectVideo = require("./img/landingVideo.mp4");
   const language = useSelector((state) => state.language);
   const cards = [
+    // dodaj source
     {
       image: require("./img/computer.png"),
       number: 4,
@@ -20,19 +21,35 @@ const Home = () => {
       firstTextSr: "Miliona Srba",
       secondTextSr: "koristi kompjuter",
     },
-    {
-      image: require("./img/dollar.png"),
-      number: 7,
-      firstTextEn: "Billion $ spending",
-      secondTextEn: "on blockchain",
-      firstTextSr: "Biliona $ uloženo",
-      secondTextSr: "u blockchain",
-    },
+    // {
+    //   image: require("./img/dollar.png"),
+    //   number: 7,
+    //   firstTextEn: "Billion $ spending",
+    //   secondTextEn: "on blockchain",
+    //   firstTextSr: "Biliona $ uloženo",
+    //   secondTextSr: "u blockchain",
+    // },
     {
       image: require("./img/token.png"),
       number: 15,
       firstTextEn: "Thousand tokens",
       secondTextEn: "currently exist",
+      firstTextSr: "Hiljada tokena",
+      secondTextSr: "postoji u svetu",
+    },
+    {
+      image: require("./img/dollar.png"),
+      number: 70,
+      firstTextEn: "Billion $ of crypto",
+      secondTextEn: "assets are traded daily",
+      firstTextSr: "Hiljada tokena",
+      secondTextSr: "postoji u svetu",
+    },
+    {
+      image: require("./img/wallet.png"),
+      number: 81,
+      firstTextEn: "Million people in the world",
+      secondTextEn: "own a crypto wallet",
       firstTextSr: "Hiljada tokena",
       secondTextSr: "postoji u svetu",
     },
@@ -48,32 +65,50 @@ const Home = () => {
           <title>Nextlab 3 - Ideje Fokusirane na Blockchain, Kriptovalute i Digitalne Novčanike</title>
         }
       </MetaTags>
-      <div className="container-fluid g-0 codeRowContainer">
+      <div className="container-fluid codeRowContainer">
         {(language === true)
           ?
           <div className="row justify-content-center">
-            <div className="col-8 col-md-5 col-lg-4 col-xl-3 my-auto codeExplanation">
-              <p className="mb-0 font-weight-bold">Generate your:</p>
-              <p className="mb-0 slide-in-fwd-center">
-                Vouchers <i className="bi bi-arrow-right"></i> Tokens{" "}<i className="bi bi-arrow-right"></i> {" "}Rewards
-              </p>
-              <p className="mb-0">and distribute them in your</p>
-              <p className="mb-0">customers wallets</p>
+            <div className="col-10 col-md-7 col-lg-7 col-xl-6 col-xxl-4 my-auto codeExplanation">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <p className="mb-3 codeExplanationHeader">Welcome to the future of technology!</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="codeExplanationFirst">
+                      <p className="mb-0">As the Blockchain industry evolves, the number of services it enhances grows and the number of users explodes, thus becoming mainstream in a few years only.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="codeExplanationSecond">
+                      <p className="mb-0"><i className="bi bi-mic"></i> We make sure we add our little grain of salt to this huge ocean of opportunities. A grain of salt with Serbian taste!</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <div className="col-12 col-md-5 col-lg-4 codeExplanation">
+            <div className="col-12 col-md-5 col-lg-5 col-xl-4 col-xxl-4 my-auto codeExplanation">
               <img src={codeImg} alt="Code" className="mockupStyle" />
             </div>
           </div>
           :
           <div className="row justify-content-center">
-            <div className="col-8 col-md-5 col-lg-4 col-xl-3 my-auto codeExplanation">
-              <p className="mb-0 font-weight-bold">Generišite:</p>
-              <p className="mb-0 slide-in-fwd-center">
-                Vaučere <i className="bi bi-arrow-right"></i> Tokene{" "}<i className="bi bi-arrow-right"></i> {" "}Nagrade
-              </p>
-              <p className="mb-0">i raspodelite ih u svoje</p>
-              <p className="mb-0">digitalne novčanike</p>
+            <div className="col-9 col-md-5 col-lg-4 col-xl-3 my-auto codeExplanation">
+              <h3 className="mb-3">Dobrodošli u budućnost tehnologije!</h3>
+              <div className="codeExplanationFirst">
+                <p className="mb-0">Kako se Blockchain tehnologija razvija, napredovale su</p>
+                <p className="mb-0">usluge koje utiču na razvoj i privlačenje korisnika,</p>
+                <p>te se smatra da će postati neizbežne za nekoliko godina.</p>
+              </div>
+              <div className="wrapper">
+                <p className="codeExplanationSecond mb-0"><i className="bi bi-mic"></i> Uvereni smo da će rezultati našeg rada doprineti velikom okeanu informacija. </p>
+              </div>
             </div>
 
             <div className="col-12 col-md-5 col-lg-4 codeExplanation">
@@ -97,7 +132,7 @@ const Home = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-md-3 col-xl-3 card text-white shadow-lg py-3 my-2"
+              className="col-8 col-sm-4 col-xxl-2 card text-white shadow-lg py-3 my-2"
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="2000"
@@ -174,7 +209,7 @@ const Home = () => {
       </div>
       <BottomFooterRow />
       <Cookie />
-    </main>
+    </main >
   );
 };
 

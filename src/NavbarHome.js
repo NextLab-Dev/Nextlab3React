@@ -12,14 +12,12 @@ const NavbarHome = () => {
       </div>
       {(language === true)
         ? <div className="insideObjectSecond">
-          <p>Ideas Focused on</p>
-          <p>Blockchain, Cryptocurrency and</p>
-          <p>Wallets Development</p>
+          <h2>Marketing and Support for</h2>
+          <h2>a Multi Chain Economy</h2>
         </div>
         : <div className="insideObjectSecond">
-          <p>Ideje Fokusirane na</p>
-          <p>Blockchain, Kriptovalute i</p>
-          <p>Digitalne Novčanike</p>
+          <h2>Marketing i Podrška za</h2>
+          <h2>Multi Chain Ekonomiju</h2>
         </div>
       }
     </header>
