@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch} from 'react-redux';
 
 const Navigation = () => {
-  const companyLogo = require("./img/Signature-02.png");
+  const companyLogo = require("./img/NXL 3-03.png");
   const serbiaFlag = require("./img/serbia.png");
   const englishFlag = require("./img/england.png");
 
