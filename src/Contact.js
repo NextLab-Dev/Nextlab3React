@@ -1,6 +1,5 @@
 import { useState } from "react";
 import NavbarContact from "./NavbarContact";
-import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import MetaTags from "react-meta-tags";
 import emailjs from "emailjs-com";
@@ -157,7 +156,6 @@ const Contact = () => {
         </div>
       </div>
       <BottomFooterRow />
-      <FooterRow />
     </div>
   );
 };

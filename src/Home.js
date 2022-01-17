@@ -1,5 +1,4 @@
 import NavbarHome from "./NavbarHome";
-import FooterRow from "./FooterRow";
 import BottomFooterRow from "./BottomFooterRow";
 import Cookie from "./Cookie";
 import MetaTags from "react-meta-tags";
@@ -39,7 +38,7 @@ const Home = () => {
     },
   ];
   return (
-    <div>
+    <main>
       <NavbarHome />
       <MetaTags>
         {(language === true)
@@ -174,9 +173,8 @@ const Home = () => {
         </div>
       </div>
       <BottomFooterRow />
-      <FooterRow />
       <Cookie />
-    </div>
+    </main>
   );
 };
 
