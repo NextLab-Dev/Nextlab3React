@@ -1,9 +1,11 @@
 import CookieConsent from "react-cookie-consent"
 
 const Cookie = () => {
+
   return (
     <div>
         <CookieConsent
+          debag={true}
           style={{ backgroundColor: "#424242" }}
           buttonStyle={{
             backgroundColor: "#039BE5",
