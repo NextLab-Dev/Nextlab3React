@@ -5,7 +5,7 @@ const NavbarHome = () => {
   const juneoVideo = require("./img/juneoMovie.mp4");
   const language = useSelector((state) => state.language);
   return (
-    <div className="imageContainer">
+    <header className="imageContainer">
       <video src={juneoVideo} autoPlay loop playsInline muted></video>
       <div className="insideObjectFirst">
         <Navigation />
@@ -22,7 +22,7 @@ const NavbarHome = () => {
           <p>Digitalne Novčanike</p>
         </div>
       }
-    </div>
+    </header>
   );
 };
 
