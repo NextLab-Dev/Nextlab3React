@@ -14,15 +14,6 @@ const Home = () => {
   const language = useSelector((state) => state.language);
   const cards = [
     {
-      image: require("./img/computer.png"),
-      number: 4,
-      firstTextEn: "Milion Serbs",
-      secondTextEn: "use a computer",
-      firstTextSr: "Miliona Srba",
-      secondTextSr: "koristi kompjuter",
-      source: "dominomagazin.com"
-    },
-    {
       image: require("./img/token.png"),
       number: 17,
       firstTextEn: "Thousand tokens",
@@ -49,6 +40,15 @@ const Home = () => {
       secondTextSr: "digitalni novčanik",
       source: "statista.com"
     },
+    {
+      image: require("./img/computer.png"),
+      number: 200,
+      firstTextEn: "Thousand Serbs",
+      secondTextEn: "own cryptocurrencies",
+      firstTextSr: "Hiljada Srba",
+      secondTextSr: "poseduje kriptovalutu",
+      source: "021.rs"
+    },
   ];
   return (
     <main>
@@ -56,9 +56,9 @@ const Home = () => {
       <MetaTags>
         {(language === true)
           ?
-          <title>Nextlab 3 - Ideas focused on blockchain, cryptocurrency and wallets development</title>
+          <title>Nextlab 3 - Marketing and Support for a Multi Chain Economy</title>
           :
-          <title>Nextlab 3 - Ideje Fokusirane na Blockchain, Kriptovalute i Digitalne Novčanike</title>
+          <title>Nextlab 3 - Marketing i Podrška za Multi Chain Ekonomiju</title>
         }
       </MetaTags>
       <div className="container-fluid codeRowContainer">
@@ -182,16 +182,16 @@ const Home = () => {
               <div className="mainProjectTitle">
                 <p className="mb-3 explanationHeader boldStyle">Nextlab 3 actively contributes to shape the Blockchain and Cryptocurrency industry:</p>
               </div>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 &#35;Marketing
               </p>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 &#35;Design
               </p>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 &#35;CustomerSupport
               </p>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 &#35;ITSuport
               </p>
             </div>
@@ -200,16 +200,16 @@ const Home = () => {
               <div className="mainProjectTitle">
                 <p className="mb-3 explanationHeader boldStyle">Nextlab 3 aktivno doprinosi oblikovanju Blockchain-a i industrije Kriptovalute:</p>
               </div>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 <i className="bi bi-hash"></i>Marketing
               </p>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 <i className="bi bi-hash"></i>Dizajn
               </p>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 <i className="bi bi-hash"></i>KorisničkaPodrška
               </p>
-              <p className="mb-2 descriptionText">
+              <p className="mb-2 codeExplanationFirst">
                 <i className="bi bi-hash"></i>ITPodrška
               </p>
             </div>
