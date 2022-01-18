@@ -225,10 +225,11 @@ div #rcc-confirm-button {
   font-weight: bold;
   text-align: left !important;
 }
-.codeExplanationFirst {
+.codeExplanationFirst, .codeExplanationSecond {
   font-size: 20px;
 }
 .codeExplanationSecond {
+  color: #2E7D32;
   font-style: italic;
 }
 .navbar-nav ul li a {
@@ -243,11 +244,8 @@ div #rcc-confirm-button {
     font-size: 20px;
     padding-left: 20px;
   }
-  .codeExplanationFirst {
+  .codeExplanationFirst, .codeExplanationSecond {
     font-size: 14px;
-  }
-  .codeExplanationSecond {
-    font-size: 12px;
   }
   .explanationHeader {
     font-size: 16px;
@@ -295,22 +293,16 @@ div #rcc-confirm-button {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-  .codeExplanationFirst {
+  .codeExplanationFirst, .codeExplanationSecond {
     font-size: 16px;
-  }
-  .codeExplanationSecond {
-    font-size: 14px;
   }
   .explanationHeader {
     font-size: 18px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  .codeExplanationFirst {
+  .codeExplanationFirst, .codeExplanationSecond {
     font-size: 18px;
-  }
-  .codeExplanationSecond {
-    font-size: 16px;
   }
   .explanationHeader {
     font-size: 20px;
