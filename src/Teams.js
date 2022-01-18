@@ -1,5 +1,6 @@
 import NavbarTeams from "./NavbarTeams";
 import BottomFooterRow from "./BottomFooterRow";
+import FooterRow from "./FooterRow";
 import MetaTags from "react-meta-tags";
 import { useSelector } from 'react-redux';
 
@@ -93,12 +94,12 @@ const Teams = () => {
           <title>Nextlab 3 - Naš tim </title>
         }
       </MetaTags>
-      <div className="container-fluid g-0">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           {teamsOne.map((team1, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-xl-2 cardNew py-3 my-1"
+              className="col-8 col-sm-4 col-xl-2 cardTeam py-3 my-1"
             >
               <div className="content">
                 <div className="front">
@@ -150,12 +151,12 @@ const Teams = () => {
           ))}
         </div>
       </div>
-      <div className="container-fluid g-0">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           {teamsTwo.map((team2, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-xl-2 cardNew py-3 my-1"
+              className="col-8 col-sm-4 col-xl-2 cardTeam py-3 my-1"
             >
               <div className="content">
                 <div className="front">
@@ -209,6 +210,7 @@ const Teams = () => {
         </div>
       </div>
       <BottomFooterRow />
+      <FooterRow />
     </div>
   );
 };

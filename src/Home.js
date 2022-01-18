@@ -1,5 +1,6 @@
 import NavbarHome from "./NavbarHome";
 import BottomFooterRow from "./BottomFooterRow";
+import FooterRow from "./FooterRow";
 import Cookie from "./Cookie";
 import MetaTags from "react-meta-tags";
 import { useSelector } from 'react-redux';
@@ -12,7 +13,6 @@ const Home = () => {
   const projectVideo = require("./img/landingVideo.mp4");
   const language = useSelector((state) => state.language);
   const cards = [
-    // dodaj source
     {
       image: require("./img/computer.png"),
       number: 4,
@@ -20,38 +20,34 @@ const Home = () => {
       secondTextEn: "use a computer",
       firstTextSr: "Miliona Srba",
       secondTextSr: "koristi kompjuter",
+      source: "dominomagazin.com"
     },
-    // {
-    //   image: require("./img/dollar.png"),
-    //   number: 7,
-    //   firstTextEn: "Billion $ spending",
-    //   secondTextEn: "on blockchain",
-    //   firstTextSr: "Biliona $ uloženo",
-    //   secondTextSr: "u blockchain",
-    // },
     {
       image: require("./img/token.png"),
-      number: 15,
+      number: 17,
       firstTextEn: "Thousand tokens",
       secondTextEn: "currently exist",
       firstTextSr: "Hiljada tokena",
       secondTextSr: "postoji u svetu",
+      source: "coinmarketcap.com"
     },
     {
       image: require("./img/dollar.png"),
       number: 70,
       firstTextEn: "Billion $ of crypto",
       secondTextEn: "assets are traded daily",
-      firstTextSr: "Hiljada tokena",
-      secondTextSr: "postoji u svetu",
+      firstTextSr: "Milijadi $ kriptovaluta",
+      secondTextSr: "dnevno se razmenjuje",
+      source: "coinmarketcap.com"
     },
     {
       image: require("./img/wallet.png"),
       number: 81,
-      firstTextEn: "Million people in the world",
+      firstTextEn: "Million people",
       secondTextEn: "own a crypto wallet",
-      firstTextSr: "Hiljada tokena",
-      secondTextSr: "postoji u svetu",
+      firstTextSr: "Milion ljudi poseduje",
+      secondTextSr: "digitalni novčanik",
+      source: "statista.com"
     },
   ];
   return (
@@ -69,12 +65,12 @@ const Home = () => {
         {(language === true)
           ?
           <div className="row justify-content-center">
-            <div className="col-10 col-md-7 col-lg-7 col-xl-6 col-xxl-4 my-auto codeExplanation">
+            <div className="col-10 col-md-6 col-lg-5 col-xxl-4 my-auto codeExplanation">
               <table className="table">
                 <thead>
                   <tr>
                     <th scope="col">
-                      <p className="mb-3 codeExplanationHeader">Welcome to the future of technology!</p>
+                      <p className="mb-3 explanationHeader">Welcome to the future of technology!</p>
                     </th>
                   </tr>
                 </thead>
@@ -93,31 +89,44 @@ const Home = () => {
               </table>
             </div>
 
-            <div className="col-12 col-md-5 col-lg-5 col-xl-4 col-xxl-4 my-auto codeExplanation">
+            <div className="col-12 col-md-6 col-xl-5 col-xxl-4 my-auto codeExplanation">
               <img src={codeImg} alt="Code" className="mockupStyle" />
             </div>
           </div>
           :
           <div className="row justify-content-center">
-            <div className="col-9 col-md-5 col-lg-4 col-xl-3 my-auto codeExplanation">
-              <h3 className="mb-3">Dobrodošli u budućnost tehnologije!</h3>
-              <div className="codeExplanationFirst">
-                <p className="mb-0">Kako se Blockchain tehnologija razvija, napredovale su</p>
-                <p className="mb-0">usluge koje utiču na razvoj i privlačenje korisnika,</p>
-                <p>te se smatra da će postati neizbežne za nekoliko godina.</p>
-              </div>
-              <div className="wrapper">
-                <p className="codeExplanationSecond mb-0"><i className="bi bi-mic"></i> Uvereni smo da će rezultati našeg rada doprineti velikom okeanu informacija. </p>
-              </div>
+            <div className="col-10 col-md-7 col-lg-5 col-xxl-4 my-auto codeExplanation">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <p className="mb-3 explanationHeader">Dobrodošli u budućnost tehnologije!</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="codeExplanationFirst">
+                      <p className="mb-0">Kako se Blockchain tehnologija razvija, napredovale su usluge koje utiču na razvoj i privlačenje korisnika, te se smatra da će postati neizbežne za nekoliko godina.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="codeExplanationSecond">
+                      <p className="mb-0"><i className="bi bi-mic"></i> Uvereni smo da će rezultati našeg rada doprineti velikom okeanu informacija.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <div className="col-12 col-md-5 col-lg-4 codeExplanation">
+            <div className="col-12 col-md-6 col-xl-5 col-xxl-4 my-auto codeExplanation">
               <img src={codeImg} alt="Code" className="mockupStyle" />
             </div>
           </div>
         }
       </div>
-      <div className="container-fluid g-0 statisticsRowContainer">
+
+      <div className="container-fluid statisticsRowContainer">
         <div className="row justify-content-center">
           {(language === true)
             ?
@@ -132,7 +141,7 @@ const Home = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-xxl-2 card text-white shadow-lg py-3 my-2"
+              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white shadow-lg py-3 my-2"
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="2000"
@@ -141,7 +150,7 @@ const Home = () => {
                 <img
                   src={card.image}
                   alt="Statistics"
-                  className="imgContainer"
+                  className="homeImgContainer"
                 />
                 <div className="descriptionContainer">
                   <p className="descriptionNumber">{card.number}</p>
@@ -149,12 +158,14 @@ const Home = () => {
                     ?
                     <div>
                       <p className="mb-0 descriptionText">{card.firstTextEn}</p>
-                      <p className="mb-0 descriptionText">{card.secondTextEn}</p>
+                      <p className="descriptionText">{card.secondTextEn}</p>
+                      <p className="mb-0 sourceStyle">Source: {card.source}</p>
                     </div>
                     :
                     <div>
                       <p className="mb-0 descriptionText">{card.firstTextSr}</p>
-                      <p className="mb-0 descriptionText">{card.secondTextSr}</p>
+                      <p className="descriptionText">{card.secondTextSr}</p>
+                      <p className="mb-0 sourceStyle">Izvor: {card.source}</p>
                     </div>
                   }
                 </div>
@@ -163,51 +174,53 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="container-fluid g-0 codeRowContainer">
+      <div className="container-fluid codeRowContainer">
         <div className="row justify-content-center">
           {(language === true)
             ?
-            <div className="col-9 col-sm-7 col-md-5 col-lg-4 mainProjectStyle">
-              <h2 className="mb-3">Our Main Project:</h2>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> A Platform-as-a-Service
-                (PaaS)
+            <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 my-auto mainProjectStyle">
+              <div className="mainProjectTitle">
+                <p className="mb-3 explanationHeader boldStyle">Nextlab 3 actively contributes to shape the Blockchain and Cryptocurrency industry:</p>
+              </div>
+              <p className="mb-2 descriptionText">
+                &#35;Marketing
               </p>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> Code name "User Village"
+              <p className="mb-2 descriptionText">
+                &#35;Design
               </p>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> For incentivize the
-                collective power
+              <p className="mb-2 descriptionText">
+                &#35;CustomerSupport
               </p>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> It will offer tools to
-                engage customers, employees and communities
+              <p className="mb-2 descriptionText">
+                &#35;ITSuport
               </p>
             </div>
             :
-            <div className="col-9 col-sm-7 col-md-5 col-lg-4 mainProjectStyle">
-              <h2 className="mb-3">Naš projekat:</h2>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> Platforma kao usluga (PaaS)
+            <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 my-auto mainProjectStyle">
+              <div className="mainProjectTitle">
+                <p className="mb-3 explanationHeader boldStyle">Nextlab 3 aktivno doprinosi oblikovanju Blockchain-a i industrije Kriptovalute:</p>
+              </div>
+              <p className="mb-2 descriptionText">
+                <i className="bi bi-hash"></i>Marketing
               </p>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> Šifra "Korisničko selo"
+              <p className="mb-2 descriptionText">
+                <i className="bi bi-hash"></i>Dizajn
               </p>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i>Podsticanje kolektivne moći
+              <p className="mb-2 descriptionText">
+                <i className="bi bi-hash"></i>KorisničkaPodrška
               </p>
-              <p className="mb-2">
-                <i className="bi bi-check2-circle"></i> Nudi alate za angažovanje klijenata, zaposlenih i zajednica
+              <p className="mb-2 descriptionText">
+                <i className="bi bi-hash"></i>ITPodrška
               </p>
             </div>
           }
-          <div className="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3 mainProjectImgContainer">
+          <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 my-auto mainProjectVideoContainer">
             <video src={projectVideo} autoPlay loop playsInline muted></video>
           </div>
         </div>
       </div>
       <BottomFooterRow />
+      <FooterRow />
       <Cookie />
     </main >
   );

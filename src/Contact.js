@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavbarContact from "./NavbarContact";
 import BottomFooterRow from "./BottomFooterRow";
+import FooterRow from "./FooterRow";
 import MetaTags from "react-meta-tags";
 import emailjs from "emailjs-com";
 import { useSelector } from 'react-redux';
@@ -75,7 +76,7 @@ const Contact = () => {
           <title>Nextlab 3 - Kontaktirajte nas</title>
         }
       </MetaTags>
-      <div className="container-fluid g-0 formContainer">
+      <div className="container-fluid formContainer">
         <div className="row justify-content-center">
           <div className="col-9 col-sm-7">
             <form onSubmit={handleSubmit}>
@@ -156,6 +157,7 @@ const Contact = () => {
         </div>
       </div>
       <BottomFooterRow />
+      <FooterRow />
     </div>
   );
 };

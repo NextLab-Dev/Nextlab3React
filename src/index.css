@@ -37,7 +37,7 @@ body {
 }
 .insideObjectSecond {
   position: absolute;
-  top: 170px;
+  top: 200px;
   left: 100px;
   font-size: 27px;
   font-weight: bold;
@@ -74,7 +74,7 @@ body {
   margin-right: 5px;
 }
 .codeRowContainer, .statisticsRowContainer {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .mockupStyle{
   width: 100%;
@@ -96,11 +96,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.card {
+.cardStatistics {
   background-color: #002966!important;
   margin-right: 10px;
 }
-.cardNew {
+.cardTeam {
   background-color: whitesmoke!important;
   margin-right: 10px;
   border-radius: 20px 0 20px 0;
@@ -118,27 +118,25 @@ body {
   font-size: 35px;
   font-weight: bold;
 }
-.imgContainer {
-  width: 60px;
-  height: 60px;
+.homeImgContainer {
+  width: 65px;
+  height: 65px;
   margin: auto;
 }
-.mainProjectStyle {
-  color: #616161;
-  font-size: 20px;
-  margin-bottom: 30px;
+.sourceStyle {
+  font-style: italic;
+  font-size: 14px;
 }
-.mainProjectStyle h2 {
+.mainProjectStyle {
+  color: #424242;
+}
+.mainProjectTitle h4 {
   font-weight: bold;
 }
-.mainProjectImgContainer {
-  margin-bottom: 30px;
-}
-.mainProjectImgContainer video {
+.mainProjectVideoContainer video {
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .footerRowContainer {
   padding: 15px 0;
@@ -180,47 +178,14 @@ body {
   height: 150px;
   border-radius: 50%;
 }
-.teamDecription {
-  text-align: center;
-}
 .formContainer {
   margin: 30px 0 30px 0;
 }
 .formGroupStyle input {
   margin-bottom: 10px;
 }
-.sendMsg {
-  background-color: #002966;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-}
 .alertStyle {
   margin-top: 15px;
-}
-.specialNavContainer {
-  background-color: #002966;
-  display: flex;
-}
-.specialNavContainer ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-  overflow: hidden;
-}
-.specialNavContainer li {
-  float: left;
-}
-.specialNavContainer li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.specName {
-  font-weight: bold;
 }
 .notFoundStyle {
   text-align: center;
@@ -253,11 +218,12 @@ div #rcc-confirm-button {
   height:50px;
   vertical-align: middle;
 }
-.codeExplanation {
-  color: #424242;
-}
-.codeExplanationHeader {
+.explanationHeader {
   font-size: 22px;
+}
+.boldStyle {
+  font-weight: bold;
+  text-align: left !important;
 }
 .codeExplanationFirst {
   font-size: 20px;
@@ -274,8 +240,6 @@ div #rcc-confirm-button {
 
 @media only screen and (max-width: 600px) {
   .insideObjectSecond {
-    left: 30px;
-    top: 200px;
     font-size: 20px;
     padding-left: 20px;
   }
@@ -285,13 +249,49 @@ div #rcc-confirm-button {
   .codeExplanationSecond {
     font-size: 12px;
   }
-  .codeExplanationHeader {
+  .explanationHeader {
     font-size: 16px;
+  }
+  .insideObjectSecond {
+    left: 10px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .codeExplanationHeader {
+  .explanationHeader {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logoStyle {
+    border-right: none;
+  }
+  .descriptionText {
+    font-size: 14px;
+  }
+  .sourceStyle {
+    font-size: 12px;
+  }
+  .leftSideStyle p, .rightSideStyle p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logoStyle {
+    border-right: none;
+  }
+  .descriptionText {
+    font-size: 16px;
+  }
+  .sourceStyle {
+    font-size: 14px;
+  }
+  .leftSideStyle p, .rightSideStyle p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .insideObjectSecond {
+    left: 30px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
@@ -301,7 +301,7 @@ div #rcc-confirm-button {
   .codeExplanationSecond {
     font-size: 14px;
   }
-  .codeExplanationHeader {
+  .explanationHeader {
     font-size: 18px;
   }
 }
@@ -312,12 +312,7 @@ div #rcc-confirm-button {
   .codeExplanationSecond {
     font-size: 16px;
   }
-  .codeExplanationHeader {
+  .explanationHeader {
     font-size: 20px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .logoStyle {
-    border-right: none;
   }
 }

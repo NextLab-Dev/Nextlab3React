@@ -325,7 +325,7 @@ const PrivacyPolicy = () => {
             <p>
               If you have any questions, concerns or complaints regarding our
               compliance with this notice and the data protection laws, or if you wish
-              to exercise your rights, we encourage you to first contact us at
+              to exercise your rights, we encourage you to first contact us at &nbsp;
               <a href="mailto:info@nextlab3.com">info@nextlab3.co</a>
             </p>
             <p>14. DATA PROTECTION AUTHORITIES</p>

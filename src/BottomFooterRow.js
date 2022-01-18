@@ -1,4 +1,3 @@
-import FooterRow from "./FooterRow";
 import { useSelector } from "react-redux";
 
 const BottomFooterRow = () => {
@@ -15,15 +14,15 @@ const BottomFooterRow = () => {
                 {(language === true)
                     ?
                     <div className="col-10 col-sm-7 col-md-5 col-xl-4 leftSideStyle">
-                        <p className="mb-1"><span style={{ fontWeight: "bold" }}>Address:</span> Topličin Venac 19a, Belgrade - Serbia</p>
-                        <p className="mb-1"><span style={{ fontWeight: "bold" }}>Registration number:</span> 21696056</p>
-                        <p className="mb-1"><span style={{ fontWeight: "bold" }}>E-mail:</span> <a href="mailto:info@nextlab3.com">info@nextlab3.com</a></p>
+                        <p><span style={{ fontWeight: "bold" }}>Address:</span> Topličin Venac 19a, Belgrade - Serbia</p>
+                        <p><span style={{ fontWeight: "bold" }}>Registration number:</span> 21696056</p>
+                        <p className="mb-0"><span style={{ fontWeight: "bold" }}>E-mail:</span> <a href="mailto:info@nextlab3.com">info@nextlab3.com</a></p>
                     </div>
                     :
                     <div className="col-10 col-sm-7 col-md-5 col-xl-4 leftSideStyle">
-                        <p className="mb-1"><span style={{ fontWeight: "bold" }}>Adresa:</span> Topličin Venac 19a, Beograd - Srbija</p>
-                        <p className="mb-1"><span style={{ fontWeight: "bold" }}>Matični broj:</span> 21696056</p>
-                        <p className="mb-1"><span style={{ fontWeight: "bold" }}>E-mail:</span> <a href="mailto:info@nextlab3.com">info@nextlab3.com</a></p>
+                        <p><span style={{ fontWeight: "bold" }}>Adresa:</span> Topličin Venac 19a, Beograd - Srbija</p>
+                        <p><span style={{ fontWeight: "bold" }}>Matični broj:</span> 21696056</p>
+                        <p className="mb-0"><span style={{ fontWeight: "bold" }}>E-mail:</span> <a href="mailto:info@nextlab3.com">info@nextlab3.com</a></p>
                     </div>
                 }
                 {(language === true)
@@ -44,7 +43,6 @@ const BottomFooterRow = () => {
                         <p className="mb-1"><i className="bi bi-chevron-right"></i> <a href="/privacy-policy">Pravila o privatnosti</a></p>
                     </div>
                 }
-                <FooterRow />
             </div>
         </footer>
     )
