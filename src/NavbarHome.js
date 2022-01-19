@@ -11,14 +11,12 @@ const NavbarHome = () => {
         <Navigation />
       </div>
       {(language === true)
-        ? <marquee width="80%" direction="left" className="insideObjectSecond">
-          <h2>Marketing and Support for</h2>
-          <h2>a Multi Chain Economy</h2>
-        </marquee>
-        : <marquee width="80%" direction="left" className="insideObjectSecond">
-          <h2>Marketing i Podrška za</h2>
-          <h2>Multi Chain Ekonomiju</h2>
-        </marquee>
+        ? <div className="insideObjectSecond">
+          <h2>Marketing and Support for a Multi Chain Economy</h2>
+        </div>
+        : <div className="insideObjectSecond">
+          <h2>Marketing i Podrška za Multi Chain Ekonomiju</h2>
+        </div>
       }
     </header>
   );

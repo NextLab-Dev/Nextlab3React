@@ -37,7 +37,7 @@ body {
 }
 .insideObjectSecond {
   position: absolute;
-  top: 200px;
+  top: 220px;
   left: 30px;
   font-size: 27px;
   font-weight: bold;
@@ -250,9 +250,9 @@ div #rcc-confirm-button {
   .explanationHeader {
     font-size: 16px;
   }
-  /* .insideObjectSecond {
+  .insideObjectSecond {
     left: 10px;
-  } */
+  }
 }
 @media only screen and (max-width: 768px) {
   .explanationHeader {
@@ -288,9 +288,9 @@ div #rcc-confirm-button {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  /* .insideObjectSecond {
+  .insideObjectSecond {
     left: 30px;
-  } */
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
   .codeExplanationFirst, .codeExplanationSecond {
