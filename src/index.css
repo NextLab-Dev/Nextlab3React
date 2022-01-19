@@ -99,6 +99,7 @@ body {
 .cardStatistics {
   background-color: #002966!important;
   margin-right: 10px;
+  border-radius: 30px;
 }
 .cardTeam {
   background-color: whitesmoke!important;
@@ -119,8 +120,8 @@ body {
   font-weight: bold;
 }
 .homeImgContainer {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 100%;
   margin: auto;
 }
 .sourceStyle {

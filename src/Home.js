@@ -32,7 +32,7 @@ const Home = () => {
       source: "coinmarketcap.com"
     },
     {
-      image: require("./img/wallet.png"),
+      image: require("./img/wallet-13.png"),
       number: 81,
       firstTextEn: "Million people",
       secondTextEn: "own a crypto wallet",
@@ -141,8 +141,8 @@ const Home = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white shadow-lg py-3 my-2"
-              data-aos="fade-down"
+              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white shadow py-3 my-2"
+              data-aos="flip-left"
               data-aos-easing="linear"
               data-aos-duration="2000"
             >
