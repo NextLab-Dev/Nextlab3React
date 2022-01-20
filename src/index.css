@@ -95,6 +95,7 @@ body {
   display:flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 .cardStatistics {
   background-color: #002966!important;
@@ -106,27 +107,13 @@ body {
   margin-right: 10px;
   border-radius: 20px 0 20px 0;
 }
-.wrapper {
-  display: flex;
-  width: 100%;
-  margin: 0;
-}
 .descriptionContainer {
   margin: auto;
   text-align: center;
 }
 .descriptionNumber {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
-}
-.homeImgContainer {
-  width: 70px;
-  height: 100%;
-  margin: auto;
-}
-.sourceStyle {
-  font-style: italic;
-  font-size: 14px;
 }
 .mainProjectStyle {
   color: #424242;
@@ -265,10 +252,7 @@ div #rcc-confirm-button {
     border-right: none;
   }
   .descriptionText {
-    font-size: 14px;
-  }
-  .sourceStyle {
-    font-size: 12px;
+    font-size: 16px;
   }
   .leftSideStyle p, .rightSideStyle p {
     font-size: 14px;
@@ -279,10 +263,7 @@ div #rcc-confirm-button {
     border-right: none;
   }
   .descriptionText {
-    font-size: 16px;
-  }
-  .sourceStyle {
-    font-size: 14px;
+    font-size: 20px;
   }
   .leftSideStyle p, .rightSideStyle p {
     font-size: 16px;

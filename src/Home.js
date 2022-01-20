@@ -14,40 +14,32 @@ const Home = () => {
   const language = useSelector((state) => state.language);
   const cards = [
     {
-      image: require("./img/token.png"),
-      number: 17,
-      firstTextEn: "Thousand tokens",
-      secondTextEn: "currently exist",
-      firstTextSr: "Hiljada tokena",
-      secondTextSr: "postoji u svetu",
-      source: "coinmarketcap.com"
+      number: 22,
+      firstTextEn: "Tutorials made",
+      secondTextEn: "until today",
+      firstTextSr: "Tutorijala napravljena",
+      secondTextSr: "do danas"
     },
     {
-      image: require("./img/dollar.png"),
-      number: 70,
-      firstTextEn: "Billion $ of crypto",
-      secondTextEn: "assets are traded daily",
-      firstTextSr: "Milijadi $ kriptovaluta",
-      secondTextSr: "dnevno se razmenjuje",
-      source: "coinmarketcap.com"
+      number: 5,
+      firstTextEn: "Employees",
+      secondTextEn: "wear glasses",
+      firstTextSr: "Zaposlenih",
+      secondTextSr: "nosi naočare"
     },
     {
-      image: require("./img/wallet-13.png"),
-      number: 81,
-      firstTextEn: "Million people",
-      secondTextEn: "own a crypto wallet",
-      firstTextSr: "Milion ljudi poseduje",
-      secondTextSr: "digitalni novčanik",
-      source: "statista.com"
+      number: 8,
+      firstTextEn: "Pizzas ordered",
+      secondTextEn: "per month",
+      firstTextSr: "Pizza poručenih",
+      secondTextSr: "tokom meseca"
     },
     {
-      image: require("./img/computer.png"),
-      number: 200,
-      firstTextEn: "Thousand Serbs",
-      secondTextEn: "own cryptocurrencies",
-      firstTextSr: "Hiljada Srba",
-      secondTextSr: "poseduje kriptovalutu",
-      source: "021.rs"
+      number: 15,
+      firstTextEn: "Coffees drunk",
+      secondTextEn: "per day",
+      firstTextSr: "Kafa popijenih",
+      secondTextSr: "za jedan dan"
     },
   ];
   return (
@@ -141,34 +133,25 @@ const Home = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white shadow py-3 my-2"
+              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white shadow-lg py-3 my-2"
               data-aos="flip-left"
               data-aos-easing="linear"
               data-aos-duration="2000"
             >
-              <div className="wrapper">
-                <img
-                  src={card.image}
-                  alt="Statistics"
-                  className="homeImgContainer"
-                />
-                <div className="descriptionContainer">
-                  <p className="descriptionNumber">{card.number}</p>
-                  {(language === true)
-                    ?
-                    <div>
-                      <p className="mb-0 descriptionText">{card.firstTextEn}</p>
-                      <p className="descriptionText">{card.secondTextEn}</p>
-                      <p className="mb-0 sourceStyle">Source: {card.source}</p>
-                    </div>
-                    :
-                    <div>
-                      <p className="mb-0 descriptionText">{card.firstTextSr}</p>
-                      <p className="descriptionText">{card.secondTextSr}</p>
-                      <p className="mb-0 sourceStyle">Izvor: {card.source}</p>
-                    </div>
-                  }
-                </div>
+              <div className="descriptionContainer">
+                <p className="descriptionNumber">{card.number}</p>
+                {(language === true)
+                  ?
+                  <div>
+                    <p className="mb-0 descriptionText">{card.firstTextEn}</p>
+                    <p className="descriptionText">{card.secondTextEn}</p>
+                  </div>
+                  :
+                  <div>
+                    <p className="mb-0 descriptionText">{card.firstTextSr}</p>
+                    <p className="descriptionText">{card.secondTextSr}</p>
+                  </div>
+                }
               </div>
             </div>
           ))}
