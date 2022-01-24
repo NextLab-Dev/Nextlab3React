@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <div className="App mainPage container-fluid g-0">
         <div className="row justify-content-center">
-          <div className="col-12">
+          <div className="col-12 p-0">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/teams" component={Teams} />

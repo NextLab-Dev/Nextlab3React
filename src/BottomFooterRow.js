@@ -4,7 +4,7 @@ const BottomFooterRow = () => {
     const language = useSelector((state) => state.language);
 
     return (
-        <footer className="container-fluid g-0 bottomFooterRowContainer">
+        <footer className="container-fluid bottomFooterRowContainer">
             <div className="row justify-content-center">
             <div className="col-10 col-sm-7 col-md-10 col-lg-10 col-xl-7 bottomFooterTitle">
                 <h4>Nextlab 3</h4>

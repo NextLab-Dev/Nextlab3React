@@ -28,14 +28,14 @@ const Home = () => {
       secondTextSr: "nosi naočare"
     },
     {
-      number: 8,
-      firstTextEn: "Pizzas ordered",
+      number: 16,
+      firstTextEn: "Pljeskavica ordered",
       secondTextEn: "per month",
-      firstTextSr: "Pizza poručenih",
+      firstTextSr: "Pljeskavica poručenih",
       secondTextSr: "tokom meseca"
     },
     {
-      number: 15,
+      number: 19,
       firstTextEn: "Coffees drunk",
       secondTextEn: "per day",
       firstTextSr: "Kafa popijenih",
