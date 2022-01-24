@@ -4,7 +4,7 @@ const NavbarTeams = () => {
   const teamImg = require("./img/Team.jpg");
   return (
     <header className="imageContainer">
-      <img src={teamImg} alt="Office" className="navImageStyle" />
+      <img src={teamImg} alt="Team" className="navImageStyle" />
       <div className="insideObjectFirst">
         <Navigation />
       </div>
