@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-const BottomMenu = () => {
+export const BottomMenu = () => {
     const language = useSelector((state) => state.language);
 
     return (
@@ -47,5 +47,3 @@ const BottomMenu = () => {
         </div>
     )
 }
-
-export default BottomMenu;

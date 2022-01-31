@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch} from 'react-redux';
 
-const Navigation = () => {
+export const Navigation = () => {
   const companyLogo = require("./img/NXL 3-03.png");
   const serbiaFlag = require("./img/serbia.png");
   const englishFlag = require("./img/england.png");
@@ -65,5 +65,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default (Navigation);

@@ -1,9 +1,9 @@
-import Home from "./Home";
-import Teams from "./Teams";
-import Contact from "./Contact";
-import TermsConditions from "./TermsConditions";
-import PrivacyPolicy from "./PrivacyPolicy";
-import PageNotFound from "./PageNotFound";
+import { Home } from "./Home";
+import { Teams } from "./Teams";
+import { Contact } from "./Contact";
+import { TermsConditions } from "./TermsConditions";
+import { PrivacyPolicy } from "./PrivacyPolicy";
+import { PageNotFound } from "./PageNotFound";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 const App = () => {

@@ -1,6 +1,6 @@
-import Navigation from "./Navigation";
+import { Navigation } from "./Navigation";
 
-const NavbarTeams = () => {
+export const NavbarTeams = () => {
   const teamImg = require("./img/Team.webp");
   return (
     <header className="imageContainer">
@@ -11,5 +11,3 @@ const NavbarTeams = () => {
     </header>
   );
 };
-
-export default NavbarTeams;

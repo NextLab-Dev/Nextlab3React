@@ -1,10 +1,10 @@
-import NavbarTeams from "./NavbarTeams";
-import BottomMenu from "./BottomMenu";
-import Footer from "./Footer";
-import MetaTags from "react-meta-tags";
+import { NavbarTeams } from "./NavbarTeams";
+import { BottomMenu } from "./BottomMenu";
+import { Footer } from "./Footer";
 import { useSelector } from 'react-redux';
+import MetaTags from "react-meta-tags";
 
-const Teams = () => {
+export const Teams = () => {
   const language = useSelector((state) => state.language);
   const teamsOne = [
     {
@@ -215,5 +215,3 @@ const Teams = () => {
     </div>
   );
 };
-
-export default Teams;

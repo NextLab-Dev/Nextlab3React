@@ -1,7 +1,7 @@
-import Navigation from "./Navigation";
+import { Navigation } from "./Navigation";
 import { useSelector } from 'react-redux';
 
-const NavbarHome = () => {
+export const NavbarHome = () => {
   const juneoVideo = require("./img/juneoMovie.mp4");
   const language = useSelector((state) => state.language);
   return (
@@ -21,5 +21,3 @@ const NavbarHome = () => {
     </header>
   );
 };
-
-export default NavbarHome;

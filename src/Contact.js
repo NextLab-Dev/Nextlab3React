@@ -1,12 +1,12 @@
 import { useState } from "react";
-import NavbarContact from "./NavbarContact";
-import BottomMenu from "./BottomMenu";
-import Footer from "./Footer";
+import { NavbarContact } from "./NavbarContact";
+import { BottomMenu } from "./BottomMenu";
+import { Footer } from "./Footer";
+import { useSelector } from 'react-redux';
 import MetaTags from "react-meta-tags";
 import emailjs from "emailjs-com";
-import { useSelector } from 'react-redux';
 
-const Contact = () => {
+export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
@@ -162,5 +162,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

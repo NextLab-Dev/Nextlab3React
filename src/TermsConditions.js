@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
-import Footer from "./Footer";
+import { Footer } from "./Footer";
 
-const TermsConditions = () => {
+export const TermsConditions = () => {
   const history = useHistory()
   const goBack = () => {
     history.push("/");
@@ -230,5 +230,3 @@ const TermsConditions = () => {
     </div>
   );
 };
-
-export default TermsConditions;

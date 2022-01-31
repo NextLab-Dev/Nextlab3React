@@ -1,6 +1,6 @@
 import CookieConsent from "react-cookie-consent"
 
-const Cookie = () => {
+export const Cookie = () => {
 
   return (
     <div>
@@ -37,5 +37,3 @@ const Cookie = () => {
     </div>
   );
 };
-
-export default Cookie;

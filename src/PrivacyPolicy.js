@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
-import Footer from "./Footer";
+import { Footer } from "./Footer";
 
-const PrivacyPolicy = () => {
+export const PrivacyPolicy = () => {
   const history = useHistory()
   const goBack = () => {
     history.push("/");
@@ -338,5 +338,3 @@ const PrivacyPolicy = () => {
     </div>
   );
 };
-
-export default PrivacyPolicy;

@@ -1,6 +1,6 @@
 const serbiaFlag = require ("./img/heartSerbia.png");
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer className="container-fluid footerContainer">
             <div className="row justify-content-center">
@@ -12,5 +12,3 @@ const Footer = () => {
         </footer>
     )
 }
-
-export default Footer;

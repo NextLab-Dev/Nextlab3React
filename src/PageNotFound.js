@@ -1,4 +1,4 @@
-const PageNotFound = () => {
+export const PageNotFound = () => {
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
@@ -12,5 +12,3 @@ const PageNotFound = () => {
     </div>
   );
 };
-
-export default PageNotFound;

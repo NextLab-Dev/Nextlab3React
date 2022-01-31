@@ -1,6 +1,6 @@
-import Navigation from "./Navigation";
+import { Navigation } from "./Navigation";
 
-const NavbarContact = () => {
+export const NavbarContact = () => {
   const officeImg = require("./img/Office.webp");
   return (
     <header className="imageContainer">
@@ -11,5 +11,3 @@ const NavbarContact = () => {
     </header>
   );
 };
-
-export default NavbarContact;

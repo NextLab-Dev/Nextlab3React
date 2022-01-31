@@ -1,13 +1,13 @@
-import NavbarHome from "./NavbarHome";
-import BottomMenu from "./BottomMenu";
-import Footer from "./Footer";
-import Cookie from "./Cookie";
-import MetaTags from "react-meta-tags";
+import { NavbarHome } from "./NavbarHome";
+import { BottomMenu } from "./BottomMenu";
+import { Footer } from "./Footer";
+import { Cookie } from "./Cookie";
 import { useSelector } from 'react-redux';
+import MetaTags from "react-meta-tags";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const Home = () => {
+export const Home = () => {
   AOS.init();
   const codeImg = require("./img/generator mockup.webp");
   const projectVideo = require("./img/landingVideo.mp4");
@@ -209,5 +209,3 @@ const Home = () => {
     </main >
   );
 };
-
-export default Home;
