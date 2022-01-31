@@ -9,18 +9,14 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 const App = () => {
   return (
     <Router>
-      <div className="App mainPage container-fluid g-0">
+      <div className="App mainPage container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 p-0">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/teams" component={Teams} />
               <Route exact path="/contact" component={Contact} />
-              <Route
-                exact
-                path="/terms-conditions"
-                component={TermsConditions}
-              />
+              <Route exact path="/terms-conditions" component={TermsConditions} />
               <Route exact path="/privacy-policy" component={PrivacyPolicy} />
               <Route path="/404" component={PageNotFound} />
               <Redirect from="*" to="/404" />

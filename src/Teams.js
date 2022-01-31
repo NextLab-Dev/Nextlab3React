@@ -1,6 +1,6 @@
 import NavbarTeams from "./NavbarTeams";
-import BottomFooterRow from "./BottomFooterRow";
-import FooterRow from "./FooterRow";
+import BottomMenu from "./BottomMenu";
+import Footer from "./Footer";
 import MetaTags from "react-meta-tags";
 import { useSelector } from 'react-redux';
 
@@ -14,7 +14,7 @@ const Teams = () => {
       descriptionEn: "Financial Apps, Markets And Data Analytics",
       positionSr: "Osnivač / Dev Tim",
       descriptionSr: "Analiza finansijskih aplikacija, tržišta i podataka",
-      img: require("./img/Luciano-Mendonca.png"),
+      img: require("./img/Luciano-Mendonca.webp"),
     },
     {
       name: "Yves",
@@ -23,7 +23,7 @@ const Teams = () => {
       descriptionEn: "Operational And Institutional Account",
       positionSr: "Suosnivač / Biznis Dev Tim",
       descriptionSr: "Operativni i institucionalni račun",
-      img: require("./img/Yves_Bassens.png"),
+      img: require("./img/Yves_Bassens.webp"),
     },
     {
       name: "Bernard",
@@ -32,7 +32,7 @@ const Teams = () => {
       descriptionEn: "Projects Development With Creativity",
       positionSr: "Suosnivač / Biznis Dev Tim",
       descriptionSr: "Kreativni razvoj projekata",
-      img: require("./img/Bernard_Neyns.png"),
+      img: require("./img/Bernard_Neyns.webp"),
     },
     {
       name: "Tiago",
@@ -41,7 +41,7 @@ const Teams = () => {
       descriptionEn: "Operations Support",
       positionSr: "Office asistent",
       descriptionSr: "Asistent operative",
-      img: require("./img/Tiago-Carruco.png"),
+      img: require("./img/Tiago-Carruco.webp"),
     },
   ];
   const teamsTwo = [
@@ -52,7 +52,7 @@ const Teams = () => {
       descriptionEn: "Product owner",
       positionSr: "Korisnička podrška",
       descriptionSr: "Menadžer proizvoda",
-      img: require("./img/Branislav_Savic.png"),
+      img: require("./img/Branislav_Savic.webp"),
     },
     {
       name: "Aleksandra",
@@ -61,7 +61,7 @@ const Teams = () => {
       descriptionEn: "Lead Designer",
       positionSr: "Dev Tim",
       descriptionSr: "Lead Dizajner",
-      img: require("./img/Aleksandra_Kitanovic.png"),
+      img: require("./img/Aleksandra_Kitanovic.webp"),
     },
     {
       name: "Jelena",
@@ -70,7 +70,7 @@ const Teams = () => {
       descriptionEn: "Front End Developer",
       positionSr: "Dev Tim",
       descriptionSr: "Front End Developer",
-      img: require("./img/Jelena_Ilic.png"),
+      img: require("./img/Jelena_Ilic.webp"),
     },
     {
       name: "Nevena",
@@ -79,7 +79,7 @@ const Teams = () => {
       descriptionEn: "Operations Support",
       positionSr: "Office Asistent",
       descriptionSr: "Asistent operative",
-      img: require("./img/Nevena_Jankovic.png"),
+      img: require("./img/Nevena_Jankovic.webp"),
     },
   ];
 
@@ -209,8 +209,9 @@ const Teams = () => {
           ))}
         </div>
       </div>
-      <BottomFooterRow />
-      <FooterRow />
+
+      <BottomMenu />
+      <Footer />
     </div>
   );
 };

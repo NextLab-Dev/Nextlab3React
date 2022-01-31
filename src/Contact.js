@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavbarContact from "./NavbarContact";
-import BottomFooterRow from "./BottomFooterRow";
-import FooterRow from "./FooterRow";
+import BottomMenu from "./BottomMenu";
+import Footer from "./Footer";
 import MetaTags from "react-meta-tags";
 import emailjs from "emailjs-com";
 import { useSelector } from 'react-redux';
@@ -156,8 +156,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <BottomFooterRow />
-      <FooterRow />
+
+      <BottomMenu />
+      <Footer />
     </div>
   );
 };

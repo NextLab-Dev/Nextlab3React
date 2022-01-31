@@ -1,12 +1,18 @@
-import FooterRow from "./FooterRow";
+import { useHistory } from "react-router-dom";
+import Footer from "./Footer";
 
 const PrivacyPolicy = () => {
+  const history = useHistory()
+  const goBack = () => {
+    history.push("/");
+  }
+
   return (
     <div>
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10 p-3">
-          <a href="/"><button type="button" className="btn btn-primary backBtn"><i className="bi bi-arrow-left"></i> Home</button></a>
+          <button type="button" className="btn btn-primary backBtn" onClick={goBack}><i className="bi bi-arrow-left"></i> Home</button>
             <h2 className="font-weight-bold">Privacy Policy</h2>
             <p>Last updated: December 14th, 2021.</p>
             <p>
@@ -16,10 +22,7 @@ const PrivacyPolicy = () => {
               cases:
             </p>
             <ul>
-              <li>
-                When you browse or visit our website on nextlab3.com, and its subdomains
-                (“Website”);
-              </li>
+              <li>When you browse or visit our website on nextlab3.com, and its subdomains (“Website”);</li>
               <li>
                 When you make use of, or interact with, our Website, our mobile
                 application, mobile software, and any other mobile software
@@ -29,14 +32,9 @@ const PrivacyPolicy = () => {
               <li>When you create an account and/or log in</li>
               <li>When you download our software / app</li>
               <li>When you provide user information</li>
-              <li>
-                When you contact us(e.g. customer support, help, submit a request)
-              </li>
+              <li>When you contact us(e.g. customer support, help, submit a request)</li>
             </ul>
-            <p>
-              Please note that this is a master privacy policy and some of its
-              provisions only apply to individuals in certain jurisdictions.
-            </p>
+            <p>Please note that this is a master privacy policy and some of its provisions only apply to individuals in certain jurisdictions.</p>
             <p>
               This Privacy Policy may be updated from time to time and therefore we
               ask you to check back periodically for the latest version of the Privacy
@@ -45,9 +43,7 @@ const PrivacyPolicy = () => {
               stated at the time of collection, we will notify you by posting a notice
               on our Website or App or by other means.
             </p>
-            <p>
-              1. WHAT PERSONAL AND OTHER INFORMATION NEXTLAB3 COLLECTS ABOUT YOU
-            </p>
+            <p>1. WHAT PERSONAL AND OTHER INFORMATION NEXTLAB3 COLLECTS ABOUT YOU</p>
             <p>
               Nextlab3 collects “personal information” about users of the Services.
               “Personal information” is information such as a name, email address, or
@@ -148,10 +144,7 @@ const PrivacyPolicy = () => {
             <p>
               4. FOR WHAT PURPOSES DOES NEXTLAB3 PROCESS MY PERSONAL INFORMATION?
             </p>
-            <p>
-              We process your personal information to operate, provide, and improve
-              the Services that we offer our users. These purposes include:
-            </p>
+            <p>We process your personal information to operate, provide, and improve the Services that we offer our users. These purposes include:</p>
             <ul>
               <li>
                 Transaction services. We use your personal information to take and
@@ -175,10 +168,7 @@ const PrivacyPolicy = () => {
                 instance, we collect bank account information for identity
                 verification and other purposes.
               </li>
-              <li>
-                Communicate with you. We use your personal information to communicate
-                with you in relation to nextlab3.com
-              </li>
+              <li>Communicate with you. We use your personal information to communicate with you in relation to nextlab3.com</li>
               <li>
                 Fraud prevention and credit risks. We process personal information to
                 prevent and detect fraud and abuse in order to protect the security of
@@ -209,9 +199,7 @@ const PrivacyPolicy = () => {
               European Commission.
             </p>
             <p>6. WHAT ARE MY RIGHTS?</p>
-            <p>
-              If you have any questions or objection as to how we collect and process
-              your personal information, please contact info@nextlab3.com.
+            <p>If you have any questions or objection as to how we collect and process your personal information, please contact info@nextlab3.com.
             </p>
             <p>
               When you consent to our processing your personal information for a
@@ -289,10 +277,7 @@ const PrivacyPolicy = () => {
                 information to comply with laws. For instance, we collect bank account
                 information for identity verification purposes.
               </li>
-              <li>
-                These and other legal bases depending on the purpose for which we use
-                personal information.
-              </li>
+              <li>These and other legal bases depending on the purpose for which we use personal information.</li>
             </ul>
             <p>11. CHILDREN’S PRIVACY</p>
             <p>
@@ -348,7 +333,8 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-      <FooterRow />
+
+      <Footer />
     </div>
   );
 };

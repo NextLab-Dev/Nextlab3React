@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 
-const BottomFooterRow = () => {
+const BottomMenu = () => {
     const language = useSelector((state) => state.language);
 
     return (
-        <footer className="container-fluid bottomFooterRowContainer">
+        <div className="container-fluid bottomMenuContainer">
             <div className="row justify-content-center">
             <div className="col-10 col-sm-7 col-md-10 col-lg-10 col-xl-7 bottomFooterTitle">
                 <h4>Nextlab 3</h4>
@@ -44,8 +44,8 @@ const BottomFooterRow = () => {
                     </div>
                 }
             </div>
-        </footer>
+        </div>
     )
 }
 
-export default BottomFooterRow;
+export default BottomMenu;

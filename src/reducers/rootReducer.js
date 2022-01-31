@@ -4,7 +4,6 @@ const initState = {
     navTeams: 'Teams',
     navContact: 'Contact',
     navLang: 'English',
-    pp: 'hello'
 }
 const rootReducer = (state = initState, action) => {
     switch (action.type) {
@@ -16,7 +15,6 @@ const rootReducer = (state = initState, action) => {
                 navTeams: 'Teams',
                 navContact: 'Contact',
                 navLang: 'English',
-                pp: 'hello'
             }
         case 'TOGGLE_SR_LANGUAGE':
             return {
@@ -26,7 +24,6 @@ const rootReducer = (state = initState, action) => {
                 navTeams: 'Tim',
                 navContact: 'Kontakt',
                 navLang: 'Srpski',
-                pp: 'cao'
             }
 
         default:

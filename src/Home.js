@@ -1,6 +1,6 @@
 import NavbarHome from "./NavbarHome";
-import BottomFooterRow from "./BottomFooterRow";
-import FooterRow from "./FooterRow";
+import BottomMenu from "./BottomMenu";
+import Footer from "./Footer";
 import Cookie from "./Cookie";
 import MetaTags from "react-meta-tags";
 import { useSelector } from 'react-redux';
@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'
 
 const Home = () => {
   AOS.init();
-  const codeImg = require("./img/generator mockup.jpg");
+  const codeImg = require("./img/generator mockup.webp");
   const projectVideo = require("./img/landingVideo.mp4");
   const language = useSelector((state) => state.language);
   const cards = [
@@ -87,7 +87,7 @@ const Home = () => {
           </div>
           :
           <div className="row justify-content-center">
-            <div className="col-10 col-md-7 col-lg-5 col-xxl-4 my-auto codeExplanation">
+            <div className="col-10 col-md-6 col-lg-5 col-xxl-4 my-auto codeExplanation">
               <table className="table">
                 <thead>
                   <tr>
@@ -133,7 +133,7 @@ const Home = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white shadow-lg py-3 my-2"
+              className="col-8 col-sm-4 col-xxl-2 cardStatistics text-white py-3 my-2"
               data-aos="flip-left"
               data-aos-easing="linear"
               data-aos-duration="2000"
@@ -163,7 +163,7 @@ const Home = () => {
             ?
             <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 my-auto mainProjectStyle">
               <div className="mainProjectTitle">
-                <p className="mb-3 explanationHeader boldStyle">Nextlab 3 actively contributes to shape the Blockchain and Cryptocurrency industry:</p>
+                <p className="mb-3 explanationHeader">Nextlab 3 actively contributes to shape the Blockchain and Cryptocurrency industry:</p>
               </div>
               <p className="mb-2 codeExplanationFirst">
                 &#35;Marketing
@@ -181,7 +181,7 @@ const Home = () => {
             :
             <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 my-auto mainProjectStyle">
               <div className="mainProjectTitle">
-                <p className="mb-3 explanationHeader boldStyle">Nextlab 3 aktivno doprinosi oblikovanju Blockchain-a i industrije Kriptovalute:</p>
+                <p className="mb-3 explanationHeader">Nextlab 3 aktivno doprinosi oblikovanju Blockchain-a i industrije Kriptovalute:</p>
               </div>
               <p className="mb-2 codeExplanationFirst">
                 <i className="bi bi-hash"></i>Marketing
@@ -202,8 +202,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <BottomFooterRow />
-      <FooterRow />
+
+      <BottomMenu />
+      <Footer />
       <Cookie />
     </main >
   );

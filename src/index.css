@@ -1,40 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .active{
   color:#fcfcfc;
 }
+
 .mainPage {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 .imageContainer {
   position: relative;
   height: 380px;
   color: white;
   overflow: hidden;
 }
+
 .imageContainer video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.navImageStyle {
+
+.navImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .insideObjectFirst {
   position: absolute;
   top: 15px;
   width: 100%;
 }
+
 .insideObjectSecond {
   position: absolute;
   top: 220px;
@@ -43,188 +41,218 @@ body {
   font-weight: bold;
   padding-top: 20px;
 }
+
 .insideObjectSecond p {
   margin-bottom: 0;
 }
+
 .logoStyle {
   width: 180px;
   height: 40px;
   border-right: 1px solid white;
   padding-right: 10px;
 }
+
 .navbar {
-  margin: 0 50px 0 30px;
+  margin: 0 30px;
 }
-#navbarNavDropdown {
-  padding-left: 10px;
-}
-#navbarNavDropdown ul li a {
-  font-size: 18px;
-}
+
 .dropdown {
   margin-top: 5px;
   width: 120px;
 }
+
 #dropdownMenu2 {
   color: white;
 }
+
 .flagStyle {
   width: 25px;
   height: 15px;
   margin-right: 5px;
 }
+
 .codeRowContainer, .statisticsRowContainer {
   margin: 30px 0;
 }
+
 .mockupStyle{
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
+
 .statisticsRowContainer {
-  background-color: #002966;
+  background-color: #002152;
   padding: 30px 0 30px 0;
 }
-.statisticsTitle {
-  color: white;
-  text-align: center;
-  padding-bottom: 15px;
-}
+
 .statisticsTitle h2 {
   height: 100%; 
   display:flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: white;
 }
+
 .cardStatistics {
-  background-color: #002966!important;
+  background-color: #011e4b!important;
   margin-right: 10px;
   border-radius: 30px;
 }
+
 .cardTeam {
   background-color: whitesmoke!important;
   margin-right: 10px;
   border-radius: 20px 0 20px 0;
+  border: 5px solid #eeeeee;
 }
+
 .descriptionContainer {
-  margin: auto;
   text-align: center;
 }
+
 .descriptionNumber {
   font-size: 50px;
   font-weight: bold;
 }
+
 .mainProjectStyle {
   color: #424242;
 }
-.mainProjectTitle h4 {
+
+.mainProjectTitle {
   font-weight: bold;
 }
+
 .mainProjectVideoContainer video {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
-.footerRowContainer {
+
+.footerContainer {
   padding: 15px 0;
   color: white;
   background-color: #343434;
 }
-.footerStyle {
+
+.footerContent {
   text-align: center;
   font-size: 13px;;
 }
-.footerStyle img {
+
+.footerContent img {
   width: 17px;
   height: 15px;
 }
-.bottomFooterRowContainer {
+
+.bottomMenuContainer {
   background-color: #002152;
   padding-top: 30px;
   color: white;
 }
+
 .bottomFooterTitle h4 {
   border-bottom: 1px solid white;
 }
+
 .leftSideStyle, .rightSideStyle {
   padding: 15px 0;
 }
+
 .leftSideStyle a, .rightSideStyle a{
   text-decoration: none;
   color: white;
 }
+
 .leftSideStyle a:hover, .rightSideStyle a:hover {
   text-decoration: underline;
   color: white;
 }
+
 .front {
+  margin: auto;
   text-align: center;
+  max-width: 150px;
 }
+
 .front img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
   border-radius: 50%;
 }
+
 .formContainer {
   margin: 30px 0 30px 0;
 }
+
 .formGroupStyle input {
   margin-bottom: 10px;
 }
+
 .alertStyle {
   margin-top: 15px;
 }
+
 .notFoundStyle {
   text-align: center;
   padding: 100px 5px;
 }
+
 .cookieStyle{
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
+
 .cookieStyle:hover{
   color: #039BE5;
   text-decoration: none;
 }
+
 div #rcc-confirm-button {
   bottom: 0;
 }
+
 .extraCard {
-  background: #136a8a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #136a8a;
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: linear-gradient(to right, #267871, #136a8a);
   color: white;
   border-radius:  20px 0 20px 0;
 }
+
 .positionContainer {
   display: inline-table;
 }
+
 .positionStyle {
   display: table-cell;
   height:50px;
   vertical-align: middle;
 }
+
 .explanationHeader {
   font-size: 22px;
-}
-.boldStyle {
-  font-weight: bold;
   text-align: left !important;
 }
+
 .codeExplanationFirst, .codeExplanationSecond {
   font-size: 20px;
 }
+
 .codeExplanationSecond {
   color: #2E7D32;
   font-style: italic;
 }
+
 .navbar-nav ul li a {
   padding-bottom: 0px;
 }
+
 .backBtn {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) {
