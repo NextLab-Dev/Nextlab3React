@@ -226,6 +226,7 @@ export const TermsConditions = () => {
                     </div>
                 </div>
             </div>
+            
             <Footer />
         </div>
     );

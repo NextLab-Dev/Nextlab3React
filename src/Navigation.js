@@ -48,8 +48,7 @@ export const Navigation = () => {
                 </div>
                 <div className="dropdown">
                     <button className="btn dropdown-toggle p-0 btnStyle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        {
-                            (language === true)
+                        {(language === true)
                                 ? <img src={englishFlag} className="flagStyle" alt="United Kingdom Flag" />
                                 : <img src={serbiaFlag} className="flagStyle" alt="Serbian Flag" />
                         }

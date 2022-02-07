@@ -15,46 +15,19 @@ export const PrivacyPolicy = () => {
                         <button type="button" className="btn btn-primary backBtn" onClick={goBack}><i className="bi bi-arrow-left"></i> Home</button>
                         <h2 className="font-weight-bold">Privacy Policy</h2>
                         <p>Last updated: December 14th, 2021.</p>
-                        <p>
-                            This privacy policy (“Privacy Policy”) governs how Nextlab3, Ltd (“Nextlab3”
-                            “we”, “our” or “us”) use, collect and store Personal Data we collect or
-                            receive from or about you (“User”, “you”) such as in the following use
-                            cases:
-                        </p>
+                        <p>This privacy policy (“Privacy Policy”) governs how Nextlab3, Ltd (“Nextlab3” “we”, “our” or “us”) use, collect and store Personal Data we collect or receive from or about you (“User”, “you”) such as in the following use cases:</p>
                         <ul>
                             <li>When you browse or visit our website on nextlab3.com, and its subdomains (“Website”);</li>
-                            <li>
-                                When you make use of, or interact with, our Website, our mobile
-                                application, mobile software, and any other mobile software
-                                application, that we license (each individually, and collectively, the
-                                “App”)
-                            </li>
+                            <li>When you make use of, or interact with, our Website, our mobile application, mobile software, and any other mobile software application, that we license (each individually, and collectively, the “App”)</li>
                             <li>When you create an account and/or log in</li>
                             <li>When you download our software / app</li>
                             <li>When you provide user information</li>
                             <li>When you contact us(e.g. customer support, help, submit a request)</li>
                         </ul>
                         <p>Please note that this is a master privacy policy and some of its provisions only apply to individuals in certain jurisdictions.</p>
-                        <p>
-                            This Privacy Policy may be updated from time to time and therefore we
-                            ask you to check back periodically for the latest version of the Privacy
-                            Policy, as indicated below. If there will be any significant changes
-                            made to the use of your Personal Data in a manner different from that
-                            stated at the time of collection, we will notify you by posting a notice
-                            on our Website or App or by other means.
-                        </p>
+                        <p>This Privacy Policy may be updated from time to time and therefore we ask you to check back periodically for the latest version of the Privacy Policy, as indicated below. If there will be any significant changes made to the use of your Personal Data in a manner different from that stated at the time of collection, we will notify you by posting a notice on our Website or App or by other means.</p>
                         <p>1. WHAT PERSONAL AND OTHER INFORMATION NEXTLAB3 COLLECTS ABOUT YOU</p>
-                        <p>
-                            Nextlab3 collects “personal information” about users of the Services.
-                            “Personal information” is information such as a name, email address, or
-                            identification card image, which refers to an identified or identifiable
-                            person. For its own purposes, Nextlab3 only processes the personal
-                            information described in section “Nextlab3 acting as a data controller” and
-                            anonymized and/or aggregated information. “Anonymized information” is
-                            information which does not relate to an identified or identifiable
-                            person or is rendered anonymous in such a manner that the person is no
-                            longer identifiable.
-                        </p>
+                        <p>Nextlab3 collects “personal information” about users of the Services. “Personal information” is information such as a name, email address, or identification card image, which refers to an identified or identifiable person. For its own purposes, Nextlab3 only processes the personal information described in section “Nextlab3 acting as a data controller” and anonymized and/or aggregated information. “Anonymized information” is information which does not relate to an identified or identifiable person or is rendered anonymous in such a manner that the person is no longer identifiable.</p>
                         <p>
                             Personal information. Nextlab3 collects a wide range of personal
                             information. This information varies depending on the Nextlab3 application
@@ -69,26 +42,10 @@ export const PrivacyPolicy = () => {
                             include your photograph and other information from the imaged document,
                             such as your eye color, weight, height, and organ donor status.
                         </p>
-                        <p>
-                            Nextlab3 collects this data either from you directly, when you provide
-                            Nextlab3 with your personal data by e.g., sending Nextlab3 an email, providing
-                            Nextlab3 with your personal data on the phone or through Nextlab3’s customer
-                            portal. Nextlab3 may also collect some of your personal data in the course
-                            of Nextlab3’s business relationship with your employer.
-                        </p>
-                        <p>
-                            Where Nextlab3 asks you to provide your personal data, this provision of
-                            personal data is voluntary. However, if you do not provide your personal
-                            data you will not be able to communicate with Nextlab3 and your employer
-                            may not be able to make use of the full range of Nextlab3’s products and
-                            services.
-                        </p>
+                        <p>Nextlab3 collects this data either from you directly, when you provide Nextlab3 with your personal data by e.g., sending Nextlab3 an email, providing Nextlab3 with your personal data on the phone or through Nextlab3’s customer portal. Nextlab3 may also collect some of your personal data in the course of Nextlab3’s business relationship with your employer.</p>
+                        <p>Where Nextlab3 asks you to provide your personal data, this provision of personal data is voluntary. However, if you do not provide your personal data you will not be able to communicate with Nextlab3 and your employer may not be able to make use of the full range of Nextlab3’s products and services.</p>
                         <p>How long do we store the collected data?</p>
-                        <p>
-                            Until we no longer need the information and proactively delete it or you
-                            send a valid deletion request. Please note that we may retain it for a
-                            longer or shorter period in accordance with data retention laws.
-                        </p>
+                        <p>Until we no longer need the information and proactively delete it or you send a valid deletion request. Please note that we may retain it for a longer or shorter period in accordance with data retention laws.</p>
                         <p>2. HOW WE PROTECT AND STORE YOUR INFORMATION</p>
                         <p>
                             Security. We have implemented appropriate technical, organizational and
@@ -115,12 +72,7 @@ export const PrivacyPolicy = () => {
                         <p>3. HOW WE SHARE YOUR PERSONAL INFORMATION</p>
                         <p>We may share your information as follows:</p>
                         <ul>
-                            <li>
-                                To the extent necessary, with regulators, to comply with all
-                                applicable laws, regulations and rules, and requests of law
-                                enforcement, regulatory and other governmental agencies or if required
-                                to do so by court order;
-                            </li>
+                            <li>To the extent necessary, with regulators, to comply with all applicable laws, regulations and rules, and requests of law enforcement, regulatory and other governmental agencies or if requiredto do so by court order;</li>
                             <li>
                                 If, in the future, we sell or transfer some or all of our business or
                                 assets to a third party, we will (to the minimum extent required)
@@ -130,51 +82,18 @@ export const PrivacyPolicy = () => {
                                 comparable event, we reserve the right to transfer or assign Personal
                                 Data in connection with the foregoing events.
                             </li>
-                            <li>
-                                Where you have provided your consent to us sharing the Personal Data
-                                (e.g., where you provide us with marketing consents or opt-in to
-                                optional additional services or functionality); and
-                            </li>
-                            <li>
-                                Where we receive requests for information from law enforcement or
-                                regulators, we carefully validate these requests before any Personal
-                                Data is disclosed.
-                            </li>
+                            <li>Where you have provided your consent to us sharing the Personal Data (e.g., where you provide us with marketing consents or opt-in to optional additional services or functionality); and</li>
+                            <li>Where we receive requests for information from law enforcement or regulators, we carefully validate these requests before any Personal Data is disclosed.</li>
                         </ul>
-                        <p>
-                            4. FOR WHAT PURPOSES DOES NEXTLAB3 PROCESS MY PERSONAL INFORMATION?
-                        </p>
+                        <p>4. FOR WHAT PURPOSES DOES NEXTLAB3 PROCESS MY PERSONAL INFORMATION?</p>
                         <p>We process your personal information to operate, provide, and improve the Services that we offer our users. These purposes include:</p>
                         <ul>
-                            <li>
-                                Transaction services. We use your personal information to take and
-                                handle orders, process payments, and communicate with you about orders
-                                and services, and promotional offers.
-                            </li>
-                            <li>
-                                Provide, troubleshoot, and improve the Nextlab3 website. We use your
-                                personal information to provide functionality, analyze performance,
-                                fix errors, and improve the usability and effectiveness of our
-                                platform.
-                            </li>
-                            <li>
-                                Recommendations and personalization. We use your personal information
-                                to recommend features and services that might be of interest to you,
-                                identify your preferences, and personalize your experience with Nextlab3.
-                            </li>
-                            <li>
-                                Comply with legal obligations. In certain cases, we collect and use
-                                your personal information to comply with laws and regulations. For
-                                instance, we collect bank account information for identity
-                                verification and other purposes.
-                            </li>
+                            <li>Transaction services. We use your personal information to take and handle orders, process payments, and communicate with you about orders and services, and promotional offers.</li>
+                            <li>Provide, troubleshoot, and improve the Nextlab3 website. We use your personal information to provide functionality, analyze performance, fix errors, and improve the usability and effectiveness of our platform.</li>
+                            <li>Recommendations and personalization. We use your personal information to recommend features and services that might be of interest to you, identify your preferences, and personalize your experience with Nextlab3.</li>
+                            <li>Comply with legal obligations. In certain cases, we collect and use your personal information to comply with laws and regulations. For instance, we collect bank account information for identityverification and other purposes.</li>
                             <li>Communicate with you. We use your personal information to communicate with you in relation to nextlab3.com</li>
-                            <li>
-                                Fraud prevention and credit risks. We process personal information to
-                                prevent and detect fraud and abuse in order to protect the security of
-                                our users. We may also use scoring methods to assess and manage credit
-                                risks.
-                            </li>
+                            <li>Fraud prevention and credit risks. We process personal information to prevent and detect fraud and abuse in order to protect the security of our users. We may also use scoring methods to assess and manage credit risks.</li>
                             <li>
                                 Purposes for which we seek your consent. We may also ask for your
                                 consent to process your personal information for a specific purpose
@@ -193,19 +112,11 @@ export const PrivacyPolicy = () => {
                             already been determined by the European Commission to provide an
                             adequate level of protection.
                         </p>
-                        <p>
-                            Where Nextlab3 transfers personal data to affiliates or service providers,
-                            Nextlab3 relies on the standard contractual clauses approved by the
-                            European Commission.
-                        </p>
+                        <p>Where Nextlab3 transfers personal data to affiliates or service providers, Nextlab3 relies on the standard contractual clauses approved by the European Commission.</p>
                         <p>6. WHAT ARE MY RIGHTS?</p>
                         <p>If you have any questions or objection as to how we collect and process your personal information, please contact info@nextlab3.com.
                         </p>
-                        <p>
-                            When you consent to our processing your personal information for a
-                            specified purpose, you may withdraw your consent at any time and we will
-                            stop any further processing of your data for that purpose.
-                        </p>
+                        <p>When you consent to our processing your personal information for a specified purpose, you may withdraw your consent at any time and we will stop any further processing of your data for that purpose.</p>
                         <p>
                             In addition, subject to applicable law, you have the right to request
                             access to, correct, and delete your personal data, and to ask for data
@@ -215,15 +126,8 @@ export const PrivacyPolicy = () => {
                             info@nextlab3.com.
                         </p>
                         <p>7. HOW CAN I DELETE MY ACCOUNT?</p>
-                        <p>
-                            Should you ever decide to delete your Account, you may do so by emailing
-                            info@nextlab3.com. If you terminate your Account, any association between
-                            your Account and information we store will no longer be accessible
-                            through your Account.
-                        </p>
-                        <p>
-                            8. LINKS TO AND INTERACTION WITH THIRD PARTY PRODUCTS
-                        </p>
+                        <p>Should you ever decide to delete your Account, you may do so by emailing info@nextlab3.com. If you terminate your Account, any association between your Account and information we store will no longer be accessible through your Account.</p>
+                        <p>8. LINKS TO AND INTERACTION WITH THIRD PARTY PRODUCTS</p>
                         <p>
                             The Site may enable you to interact with or contain links to third party
                             websites, mobile software applications and services that are not owned
@@ -245,26 +149,11 @@ export const PrivacyPolicy = () => {
                             user. Most browsers allow you to control cookies, including whether or
                             not to accept them and how to remove them.
                         </p>
-                        <p>
-                            10. EU GDPR and UK Data Protection Laws - Legal Basis
-                        </p>
-                        <p>
-                            The EU GDPR and UK data protection laws require a legal basis for our
-                            use of personal information. Our basis varies depending on the specific
-                            purpose for which we use personal information. We rely on:
-                        </p>
+                        <p>10. EU GDPR and UK Data Protection Laws - Legal Basis</p>
+                        <p>The EU GDPR and UK data protection laws require a legal basis for our use of personal information. Our basis varies depending on the specific purpose for which we use personal information. We rely on:</p>
                         <ul>
-                            <li>
-                                Performance of a contract when we provide you with products or
-                                services, or communicate with you about them. This includes when we
-                                use your personal information to take and handle orders, and process
-                                payments.
-                            </li>
-                            <li>
-                                Our legitimate business interests and the interests of our users when
-                                we detect and prevent fraud and abuse in order to protect the security
-                                of our users, ourselves, or others.
-                            </li>
+                            <li>Performance of a contract when we provide you with products or services, or communicate with you about them. This includes when we use your personal information to take and handle orders, and processpayments.</li>
+                            <li>Our legitimate business interests and the interests of our users when we detect and prevent fraud and abuse in order to protect the security of our users, ourselves, or others.</li>
                             <li>
                                 Your consent when we ask for your consent to process your personal
                                 information for a specific purpose that we communicate to you. When
@@ -272,11 +161,7 @@ export const PrivacyPolicy = () => {
                                 specified purpose, you may withdraw your consent at any time and we
                                 will stop processing of your data for that purpose.
                             </li>
-                            <li>
-                                Compliance with a legal obligation when we use your personal
-                                information to comply with laws. For instance, we collect bank account
-                                information for identity verification purposes.
-                            </li>
+                            <li>Compliance with a legal obligation when we use your personal information to comply with laws. For instance, we collect bank account information for identity verification purposes.</li>
                             <li>These and other legal bases depending on the purpose for which we use personal information.</li>
                         </ul>
                         <p>11. CHILDREN’S PRIVACY</p>
@@ -307,18 +192,11 @@ export const PrivacyPolicy = () => {
                             email address if it changes.
                         </p>
                         <p>13. CONTACT US</p>
-                        <p>
-                            If you have any questions, concerns or complaints regarding our
-                            compliance with this notice and the data protection laws, or if you wish
-                            to exercise your rights, we encourage you to first contact us at &nbsp;
+                        <p>If you have any questions, concerns or complaints regarding our compliance with this notice and the data protection laws, or if you wish to exercise your rights, we encourage you to first contact us at &nbsp;
                             <a href="mailto:info@nextlab3.com">info@nextlab3.co</a>
                         </p>
                         <p>14. DATA PROTECTION AUTHORITIES</p>
-                        <p>
-                            If you are not satisfied with our response to your complaint, you have
-                            the right to submit a complaint with our regulator. You can contact the
-                            appropriate regulator direct from the details below:
-                        </p>
+                        <p>If you are not satisfied with our response to your complaint, you have the right to submit a complaint with our regulator. You can contact the appropriate regulator direct from the details below:</p>
                         <p style={{ marginBottom: '0px', fontWeight: 'bold' }}>For residents of the United Kingdom:</p>
                         <p>The Information Commissioner’s Office</p>
                         <p>Wycliffe House, Water Ln:</p>
