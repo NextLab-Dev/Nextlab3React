@@ -3,6 +3,8 @@ const initState = {
     navHome: 'Home',
     navTeams: 'Teams',
     navContact: 'Contact',
+    navTerms: 'Terms & Conditions',
+    navPrivacy: 'Privacy Policy',
     navLang: 'English',
 }
 const rootReducer = (state = initState, action) => {
@@ -14,6 +16,8 @@ const rootReducer = (state = initState, action) => {
                 navHome: 'Home',
                 navTeams: 'Teams',
                 navContact: 'Contact',
+                navTerms: 'Terms & Conditions',
+                navPrivacy: 'Privacy Policy',
                 navLang: 'English',
             }
         case 'TOGGLE_SR_LANGUAGE':
@@ -23,6 +27,8 @@ const rootReducer = (state = initState, action) => {
                 navHome: 'O nama',
                 navTeams: 'Tim',
                 navContact: 'Kontakt',
+                navTerms: 'Ulovi korišćenja',
+                navPrivacy: 'Pravila o privatnosti',
                 navLang: 'Srpski',
             }
 
